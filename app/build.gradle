@@ -35,8 +35,8 @@ android {
             signingConfig = signingConfigs.getByName("debug")
             
             // 启用混淆和资源压缩
-            isMinifyEnabled = true
-            isShrinkResources = true
+            minifyEnabled = true
+            shrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
