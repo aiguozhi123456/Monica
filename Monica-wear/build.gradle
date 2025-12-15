@@ -39,11 +39,18 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            // 使用 Debug 签名（无需密钥库）
+            signingConfig = signingConfigs.getByName("debug")
+            
+            // 启用混淆和资源压缩
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
+    }
         debug {
             minifyEnabled false
             shrinkResources false
