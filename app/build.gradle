@@ -42,7 +42,6 @@ android {
                 "proguard-rules.pro"
             )
         }
-    }
         debug {
             minifyEnabled false
             shrinkResources false
