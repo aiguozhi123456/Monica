@@ -81,7 +81,7 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
-
+ }
 dependencies {
     // Core Android libraries
     implementation libs.androidx.core.ktx
