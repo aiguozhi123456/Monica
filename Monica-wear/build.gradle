@@ -28,14 +28,6 @@ android {
         }
     }
 
-    signingConfigs {
-        release {
-            storeFile file(project.hasProperty('RELEASE_STORE_FILE') ? RELEASE_STORE_FILE : 'release.keystore')
-            storePassword project.hasProperty('RELEASE_STORE_PASSWORD') ? RELEASE_STORE_PASSWORD : 'monica'
-            keyAlias project.hasProperty('RELEASE_KEY_ALIAS') ? RELEASE_KEY_ALIAS : 'monica'
-            keyPassword project.hasProperty('RELEASE_KEY_PASSWORD') ? RELEASE_KEY_PASSWORD : 'monica'
-        }
-    }
 
     buildTypes {
         release {
