@@ -134,32 +134,3 @@ jobs:
           name: mapping-release
           path: app/build/outputs/mapping/release/mapping.txt
           retention-days: 30
-     # 自动打标签 & 生成发行说明
-      - name: Bump version and push tag
-        id: tag
-        uses: anothrNick/github-tag-action@1.70.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: true
-          DEFAULT_BUMP: patch          # 需要 major/minor 可手动改 commit message 带 `#major` / `#minor`
-
-      # 创建 Release 并上传资产
-      - name: Create Release
-        id: create_release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ steps.tag.outputs.new_tag }}
-          name: Release ${{ steps.tag.outputs.new_tag }}
-          body: |
-            ## 构建出处
-            - 工作流运行：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-            - 提交 SHA：${{ github.sha }}
-            - 提交信息：${{ github.event.head_commit.message }}
-            - 构建时间：${{ github.event.head_commit.timestamp }}
-          files: |
-            app/build/outputs/apk/release/*.apk
-            app/build/outputs/apk/release/checksums.txt
-            app/build/outputs/mapping/release/mapping.txt
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-
