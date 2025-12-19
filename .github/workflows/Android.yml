@@ -8,6 +8,10 @@ permissions:
   security-events: write
   actions: read
 
+defaults:
+  run:
+    working-directory: "Monica for Android"   #进入正确子目录
+
 jobs:
   # ===== 安全扫描 =====
   security-scan:
@@ -35,7 +39,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v4
+        uses: github/codeql-action/init@v3
         with:
           languages: java-kotlin
           queries: security-and-quality
@@ -43,10 +47,10 @@ jobs:
       - name: Clean & Build for CodeQL (release)
         run: |
           ./gradlew clean
-          ./gradlew assembleRelease --console=plain --info
+          ./gradlew :app:assembleRelease --console=plain --info   # 👈 只构建手机模块
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v4
+        uses: github/codeql-action/analyze@v3
         with:
           category: "/language:java-kotlin"
           upload: true
@@ -81,10 +85,11 @@ jobs:
           path: app/build/test-results/
           retention-days: 7
           if-no-files-found: ignore
+
   # ===== 最终构建：必须等扫描 + 测试 都完成 =====
   build:
     name: Build Release APK
-    needs: [security-scan, test]   # 两个都通过才执行
+    needs: [security-scan, test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -108,7 +113,7 @@ jobs:
 
       - name: Build Release APK (signed & obfuscated)
         run: |
-          ./gradlew assembleRelease --stacktrace \
+          ./gradlew :app:assembleRelease --stacktrace \
             -Pandroid.injected.signing.store.file=$PWD/release.jks \
             -Pandroid.injected.signing.store.password=${{ secrets.DEBUG_STORE_PASSWORD }} \
             -Pandroid.injected.signing.key.alias=${{ secrets.DEBUG_KEY_ALIAS }} \
