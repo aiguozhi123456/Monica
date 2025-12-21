@@ -33,8 +33,8 @@ jobs:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          # 修正 key 的路径，使其与项目目录结构匹配
-          key: ${{ runner.os }}-gradle-${{ hashFiles('${{ env.ANDROID_PROJECT_DIR }}/**/*.gradle*', '${{ env.ANDROID_PROJECT_DIR }}/**/gradle-wrapper.properties') }}
+          # 修正 key 的路径，使用 format 函数正确引用变量
+          key: ${{ runner.os }}-gradle-${{ hashFiles(format('{0}/**/*.gradle*', env.ANDROID_PROJECT_DIR), format('{0}/**/gradle-wrapper.properties', env.ANDROID_PROJECT_DIR)) }}
 
       - name: Grant execute permission for gradlew
         # 明确指定 gradlew 路径
@@ -48,9 +48,9 @@ jobs:
 
       - name: Clean & Build for CodeQL (release)
         run: |
-          # 明确指定 gradlew 路径
-          "${{ env.ANDROID_PROJECT_DIR }}/gradlew" clean
-          "${{ env.ANDROID_PROJECT_DIR }}/gradlew" :app:assembleRelease --console=plain --info
+          # 明确指定 gradlew 路径，修正引号使用
+          ${{ env.ANDROID_PROJECT_DIR }}/gradlew clean
+          ${{ env.ANDROID_PROJECT_DIR }}/gradlew :app:assembleRelease --console=plain --info
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4 # 升级到最新版本
@@ -76,13 +76,15 @@ jobs:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('${{ env.ANDROID_PROJECT_DIR }}/**/*.gradle*', '${{ env.ANDROID_PROJECT_DIR }}/**/gradle-wrapper.properties') }}
+          # 修正 key 的路径，使用 format 函数正确引用变量
+          key: ${{ runner.os }}-gradle-${{ hashFiles(format('{0}/**/*.gradle*', env.ANDROID_PROJECT_DIR), format('{0}/**/gradle-wrapper.properties', env.ANDROID_PROJECT_DIR)) }}
           
       - name: Grant execute permission for gradlew
         run: chmod +x "${{ env.ANDROID_PROJECT_DIR }}/gradlew"
         
       - name: Run tests
-        run: "${{ env.ANDROID_PROJECT_DIR }}/gradlew" test --stacktrace
+        # 修正引号使用错误
+        run: ${{ env.ANDROID_PROJECT_DIR }}/gradlew test --stacktrace
         
       - name: Upload Test Results
         if: always()
@@ -114,7 +116,8 @@ jobs:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('${{ env.ANDROID_PROJECT_DIR }}/**/*.gradle*', '${{ env.ANDROID_PROJECT_DIR }}/**/gradle-wrapper.properties') }}
+          # 修正 key 的路径，使用 format 函数正确引用变量
+          key: ${{ runner.os }}-gradle-${{ hashFiles(format('{0}/**/*.gradle*', env.ANDROID_PROJECT_DIR), format('{0}/**/gradle-wrapper.properties', env.ANDROID_PROJECT_DIR)) }}
           
       - name: Grant execute permission for gradlew
         run: chmod +x "${{ env.ANDROID_PROJECT_DIR }}/gradlew"
@@ -125,8 +128,8 @@ jobs:
 
       - name: Build Release APK (signed & obfuscated)
         run: |
-          # 明确指定 gradlew 路径
-          "${{ env.ANDROID_PROJECT_DIR }}/gradlew" :app:assembleRelease --stacktrace \
+          # 明确指定 gradlew 路径，修正引号使用
+          ${{ env.ANDROID_PROJECT_DIR }}/gradlew :app:assembleRelease --stacktrace \
             -Pandroid.injected.signing.store.file=$PWD/release.jks \
             -Pandroid.injected.signing.store.password=${{ secrets.DEBUG_STORE_PASSWORD }} \
             -Pandroid.injected.signing.key.alias=${{ secrets.DEBUG_KEY_ALIAS }} \
@@ -142,8 +145,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-apk-obfuscated
+          # 修正路径，将注释移到外部
           path: |
-            # 修正路径
             ${{ env.ANDROID_PROJECT_DIR }}/app/build/outputs/apk/release/*.apk
             ${{ env.ANDROID_PROJECT_DIR }}/app/build/outputs/apk/release/checksums.txt
           retention-days: 14
