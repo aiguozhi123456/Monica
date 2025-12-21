@@ -8,9 +8,9 @@ permissions:
   security-events: write
   actions: read
 
-defaults:
-  run:
-    working-directory: "Monica for Android"   #进入正确子目录
+env:
+  # 明确定义 Android 项目的根目录，方便后续步骤引用
+  ANDROID_PROJECT_DIR: 'Monica for Android'
 
 jobs:
   # ===== 安全扫描 =====
@@ -33,24 +33,27 @@ jobs:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          # 修正 key 的路径，使其与项目目录结构匹配
+          key: ${{ runner.os }}-gradle-${{ hashFiles('${{ env.ANDROID_PROJECT_DIR }}/**/*.gradle*', '${{ env.ANDROID_PROJECT_DIR }}/**/gradle-wrapper.properties') }}
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        # 明确指定 gradlew 路径
+        run: chmod +x "${{ env.ANDROID_PROJECT_DIR }}/gradlew"
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
+        uses: github/codeql-action/init@v4 # 升级到最新版本
         with:
           languages: java-kotlin
           queries: security-and-quality
 
       - name: Clean & Build for CodeQL (release)
         run: |
-          ./gradlew clean
-          ./gradlew :app:assembleRelease --console=plain --info   # 👈 只构建手机模块
+          # 明确指定 gradlew 路径
+          "${{ env.ANDROID_PROJECT_DIR }}/gradlew" clean
+          "${{ env.ANDROID_PROJECT_DIR }}/gradlew" :app:assembleRelease --console=plain --info
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@v4 # 升级到最新版本
         with:
           category: "/language:java-kotlin"
           upload: true
@@ -66,26 +69,31 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          
       - name: Cache Gradle
         uses: actions/cache@v4
         with:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          key: ${{ runner.os }}-gradle-${{ hashFiles('${{ env.ANDROID_PROJECT_DIR }}/**/*.gradle*', '${{ env.ANDROID_PROJECT_DIR }}/**/gradle-wrapper.properties') }}
+          
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x "${{ env.ANDROID_PROJECT_DIR }}/gradlew"
+        
       - name: Run tests
-        run: ./gradlew test --stacktrace
+        run: "${{ env.ANDROID_PROJECT_DIR }}/gradlew" test --stacktrace
+        
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: app/build/test-results/
+          # 修正路径
+          path: ${{ env.ANDROID_PROJECT_DIR }}/app/build/test-results/
           retention-days: 7
           if-no-files-found: ignore
-
+          
   # ===== 最终构建：必须等扫描 + 测试 都完成 =====
   build:
     name: Build Release APK
@@ -93,27 +101,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
+          
       - name: Cache Gradle
         uses: actions/cache@v4
         with:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          key: ${{ runner.os }}-gradle-${{ hashFiles('${{ env.ANDROID_PROJECT_DIR }}/**/*.gradle*', '${{ env.ANDROID_PROJECT_DIR }}/**/gradle-wrapper.properties') }}
+          
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x "${{ env.ANDROID_PROJECT_DIR }}/gradlew"
 
       - name: Decode keystore
+        # $PWD 始终是仓库根目录，这里保持不变
         run: echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > $PWD/release.jks
 
       - name: Build Release APK (signed & obfuscated)
         run: |
-          ./gradlew :app:assembleRelease --stacktrace \
+          # 明确指定 gradlew 路径
+          "${{ env.ANDROID_PROJECT_DIR }}/gradlew" :app:assembleRelease --stacktrace \
             -Pandroid.injected.signing.store.file=$PWD/release.jks \
             -Pandroid.injected.signing.store.password=${{ secrets.DEBUG_STORE_PASSWORD }} \
             -Pandroid.injected.signing.key.alias=${{ secrets.DEBUG_KEY_ALIAS }} \
@@ -121,7 +134,8 @@ jobs:
 
       - name: Generate checksums
         run: |
-          cd app/build/outputs/apk/release
+          # 修正路径
+          cd "${{ env.ANDROID_PROJECT_DIR }}/app/build/outputs/apk/release"
           sha256sum *.apk > checksums.txt
 
       - name: Upload APK
@@ -129,13 +143,15 @@ jobs:
         with:
           name: release-apk-obfuscated
           path: |
-            app/build/outputs/apk/release/*.apk
-            app/build/outputs/apk/release/checksums.txt
+            # 修正路径
+            ${{ env.ANDROID_PROJECT_DIR }}/app/build/outputs/apk/release/*.apk
+            ${{ env.ANDROID_PROJECT_DIR }}/app/build/outputs/apk/release/checksums.txt
           retention-days: 14
 
       - name: Upload ProGuard/R8 mapping
         uses: actions/upload-artifact@v4
         with:
           name: mapping-release
-          path: app/build/outputs/mapping/release/mapping.txt
+          # 修正路径
+          path: ${{ env.ANDROID_PROJECT_DIR }}/app/build/outputs/mapping/release/mapping.txt
           retention-days: 30
