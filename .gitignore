@@ -1,0 +1,41 @@
+
+# Binaries and Build results
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*intermediate*
+
+# User specific
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Installer output (optional, but usually don't commit 60MB binary)
+Monica for Windows/Monica.Windows/installer/
+
+# Dependencies
+node_modules/
+packages/
+
+# Temporary
+*.log
+*.tmp
+Monica for Android/build_errors.txt
+Monica for Android/build_log.txt
+# TRAE files
+.trae/
+
+# Exclude attached folders
+KeePassDX-master/
+keyguard-app-master/
+# Documentation and Analysis
+修复文档/
