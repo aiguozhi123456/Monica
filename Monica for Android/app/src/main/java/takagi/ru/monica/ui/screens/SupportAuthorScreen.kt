@@ -261,6 +261,9 @@ fun SupportAuthorScreen(
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                             textAlign = TextAlign.Center
                         )
+                    }
+                }
+            }
 
             // 其他支持方式卡片
             Card(
@@ -334,53 +337,33 @@ fun SupportAuthorScreen(
         }
     }
 }
+
 /**
  * 保存图片到相册
  */
 private fun saveImageToGallery(context: android.content.Context, bitmap: Bitmap) {
     try {
-        val resolver = context.contentResolver
-        
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            // Android 10+ 使用新的 MediaStore API
-            val contentValues = ContentValues().apply {
-                put(MediaStore.MediaColumns.DISPLAY_NAME, "Monica_支持作者_${System.currentTimeMillis()}.jpg")
-                put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg")
+        val contentValues = ContentValues().apply {
+            put(MediaStore.MediaColumns.DISPLAY_NAME, "Monica_支持作者_${System.currentTimeMillis()}.jpg")
+            put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg")
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/Monica")
             }
-            
-            val uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)
-            
-            uri?.let { imageUri ->
-                val outputStream: OutputStream? = resolver.openOutputStream(imageUri)
-                outputStream?.use { stream ->
-                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream)
-                    Toast.makeText(context, context.getString(R.string.qr_code_saved), Toast.LENGTH_SHORT).show()
-                }
-            } ?: run {
-                Toast.makeText(context, context.getString(R.string.save_failed), Toast.LENGTH_SHORT).show()
-            }
-        } else {
-            // Android 8-9 使用传统的 MediaStore API
-            val picturesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-            val monicaDir = java.io.File(picturesDir, "Monica")
-            if (!monicaDir.exists()) {
-                monicaDir.mkdirs()
-            }
-            val imageFile = java.io.File(monicaDir, "Monica_支持作者_${System.currentTimeMillis()}.jpg")
-            val outputStream = java.io.FileOutputStream(imageFile)
-            outputStream.use { stream ->
+        }
+        
+        val resolver = context.contentResolver
+        val uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)
+        
+        uri?.let { imageUri ->
+            val outputStream: OutputStream? = resolver.openOutputStream(imageUri)
+            outputStream?.use { stream ->
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream)
-                // 通知 MediaScanner 扫描文件，使其在相册中可见
-                val mediaScanIntent = android.content.Intent(android.content.Intent.ACTION_MEDIA_SCANNER_SCAN_FILE)
-                mediaScanIntent.data = android.net.Uri.fromFile(imageFile)
-                context.sendBroadcast(mediaScanIntent)
                 Toast.makeText(context, context.getString(R.string.qr_code_saved), Toast.LENGTH_SHORT).show()
             }
+        } ?: run {
+            Toast.makeText(context, context.getString(R.string.save_failed), Toast.LENGTH_SHORT).show()
         }
     } catch (e: Exception) {
         Toast.makeText(context, context.getString(R.string.save_failed_with_error, e.message), Toast.LENGTH_SHORT).show()
-    }
-}
     }
 }

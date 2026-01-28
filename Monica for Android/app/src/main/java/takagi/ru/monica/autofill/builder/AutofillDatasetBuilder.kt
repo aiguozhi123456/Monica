@@ -61,11 +61,12 @@ object AutofillDatasetBuilder {
             createPreTiramisu(menuPresentation, fields, provideInlinePresentation)
         }
     }
+    
     /**
      * Android 13+ (API 33) 的实现
      * 使用 Presentations.Builder + setField() API
      */
-    @Suppress("NewApi")
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     inline fun createForTiramisu(
         menuPresentation: RemoteViews,
         fields: Map<AutofillId, FieldData?>,
@@ -132,7 +133,7 @@ object AutofillDatasetBuilder {
          * @param icon 图标
          * @param contentDescription 无障碍描述
          */
-        @Suppress("NewApi")
+        @RequiresApi(Build.VERSION_CODES.R)
         fun tryCreate(
             context: Context,
             spec: InlinePresentationSpec,
@@ -165,7 +166,7 @@ object AutofillDatasetBuilder {
         /**
          * 查找兼容的内联规格
          */
-        @Suppress("NewApi")
+        @RequiresApi(Build.VERSION_CODES.R)
         private fun findCompatibleSpec(
             primarySpec: InlinePresentationSpec,
             allSpecs: List<InlinePresentationSpec>?,
@@ -186,12 +187,13 @@ object AutofillDatasetBuilder {
             
             android.util.Log.w("DatasetBuilder", "No compatible inline spec found")
             return null
+        }
         
         /**
          * 创建应用图标
          * 参考 Keyguard 的 createAppIcon
          */
-        @Suppress("NewApi")
+        @RequiresApi(Build.VERSION_CODES.R)
         fun createAppIcon(context: Context, packageName: String?): Icon {
             return try {
                 if (!packageName.isNullOrBlank()) {
@@ -215,14 +217,13 @@ object AutofillDatasetBuilder {
         /**
          * 创建默认图标
          */
-        @Suppress("NewApi")
+        @RequiresApi(Build.VERSION_CODES.R)
         private fun createDefaultIcon(context: Context): Icon {
             return Icon.createWithResource(context, R.mipmap.ic_launcher).apply {
                 setTintBlendMode(BlendMode.DST)
             }
         }
     }
-}
     
     /**
      * RemoteViews 工厂

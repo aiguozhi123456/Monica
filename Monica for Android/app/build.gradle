@@ -9,9 +9,10 @@ plugins {
 android {
     namespace 'takagi.ru.monica'
     compileSdk 34
+
     defaultConfig {
         applicationId "takagi.ru.monica"
-        minSdk 26
+        minSdk 30
         targetSdk 34
         versionCode 10
         versionName "1.0.24"
@@ -49,7 +50,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.5.10'
+        kotlinCompilerExtensionVersion '1.5.1'
     }
     packaging {
         resources {

@@ -9,29 +9,30 @@
         android:translateX="54"
         android:translateY="54">
         
-        <!-- 锁体 (白色) -->
+        <!-- 锁体 - 使用渐变 (从SVG转换: #006399 到 #9C4146) -->
         <path
-            android:fillColor="#FFFFFF"
-            android:pathData="M-16,2 L16,2 L16,22 A2,2 0 0,1 14,24 L-14,24 A2,2 0 0,1 -16,22 Z" />
+            android:fillColor="#006399"
+            android:pathData="M-22.5,-18 C-22.5,-25.3 -18,-28.1 0,-28.1 C18,-28.1 22.5,-25.3 22.5,-18 L22.5,4.5 C22.5,19.7 11.3,25.3 0,28.1 C-11.3,25.3 -22.5,19.7 -22.5,4.5 Z" />
         
-        <!-- 锁扣 (白色) -->
+        <!-- 装饰线条 (半透明白色) -->
         <path
             android:fillColor="#00000000"
             android:strokeColor="#FFFFFF"
-            android:strokeWidth="4.5"
-            android:strokeLineCap="butt"
-            android:strokeLineJoin="miter"
-            android:pathData="M-10,2 L-10,-8 A10,10 0 0,1 10,-8 L10,2" />
+            android:strokeWidth="1.5"
+            android:strokeLineCap="round"
+            android:pathData="M-17,-14 Q-17,-19.7 0,-19.7 Q17,-19.7 17,-14" />
         
-        <!-- 锁孔 - 圆形部分 (背景色) -->
-        <path
-            android:fillColor="#2c3148"
-            android:pathData="M-3,10 A3,3 0 1,1 3,10 A3,3 0 1,1 -3,10 Z" />
+        <!-- 锁孔 - 圆形部分 (白色) -->
+        <circle
+            android:fillColor="#FFFFFF"
+            android:cx="0"
+            android:cy="-5.6"
+            android:r="6.8" />
         
-        <!-- 锁孔 - 下方的槽 (背景色) -->
+        <!-- 锁孔 - 下方的槽 (白色) -->
         <path
-            android:fillColor="#2c3148"
-            android:pathData="M-1.5,12 L1.5,12 L1.5,18 L-1.5,18 Z" />
+            android:fillColor="#FFFFFF"
+            android:pathData="M-3.4,-1.1 L3.4,-1.1 L3.4,6.8 L-3.4,6.8 Z" />
         
     </group>
 </vector>

@@ -1543,7 +1543,7 @@ class MonicaAutofillService : AutofillService() {
      * @param index 当前索引（用于规格回退）
      * @param allSpecs 所有可用规格（用于规格回退）
      */
-    @Suppress("NewApi")
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun createInlinePresentation(
         password: PasswordEntry,
         callingPackage: String,
@@ -1606,10 +1606,11 @@ class MonicaAutofillService : AutofillService() {
             return null
         }
     }
+    
     /**
      * 创建应用图标 - 参考 Keyguard 的 createAppIcon
      */
-    @Suppress("NewApi")
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun createAppIcon(packageNameOrDefault: String): Icon {
         return try {
             if (packageNameOrDefault.isNotBlank()) {
@@ -1636,13 +1637,14 @@ class MonicaAutofillService : AutofillService() {
             }
         }
     }
+    
     /**
      * 创建手动选择入口的内联建议
      * 用于显示"打开 Monica"按钮作为兜底选项
      * 
      * 参考 Keyguard 的 tryBuildManualSelectionInlinePresentation
      */
-    @Suppress("NewApi")
+    @RequiresApi(Build.VERSION_CODES.R)
     private fun createManualSelectionInlinePresentation(
         inlineSpec: InlinePresentationSpec,
         packageName: String,

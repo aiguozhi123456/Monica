@@ -122,15 +122,12 @@ class MainActivity : FragmentActivity() {
             super.attachBaseContext(newBase)
         }
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // 启用沉浸式状态栏（Android 11+ 使用 enableEdgeToEdge，低版本使用传统方式）
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            enableEdgeToEdge()
-        } else {
-            enableEdgeToEdgeLegacy()
-        }
+        // 启用沉浸式状态栏
+        enableEdgeToEdge()
 
         installSplashScreen()
 
@@ -203,26 +200,9 @@ class MainActivity : FragmentActivity() {
             Log.e("MainActivity", "Failed to initialize auto backup: ${e.message}")
         }
     }
+
     private fun enableEdgeToEdge() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
-    }
-
-    private fun enableEdgeToEdgeLegacy() {
-        // Android 8-10 的沉浸式实现
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            @Suppress("DEPRECATION")
-            window.decorView.systemUiVisibility = (
-                android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                    or android.view.View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                    or android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                )
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            @Suppress("DEPRECATION")
-            window.decorView.systemUiVisibility = (
-                android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                    or android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                )
-        }
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {

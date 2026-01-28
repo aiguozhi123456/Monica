@@ -120,6 +120,7 @@ fun QrCodeDialog(
                         Spacer(modifier = Modifier.width(4.dp))
                         Text(stringResource(R.string.close))
                     }
+                    
                     Button(
                         onClick = {
                             qrBitmap?.let { bitmap ->
@@ -178,6 +179,7 @@ private fun generateOtpUri(data: TotpData, title: String): String {
     
     return sb.toString()
 }
+
 private suspend fun saveBitmapToGallery(context: Context, bitmap: Bitmap, title: String) {
     withContext(Dispatchers.IO) {
         try {
@@ -185,7 +187,6 @@ private suspend fun saveBitmapToGallery(context: Context, bitmap: Bitmap, title:
             var fos: OutputStream? = null
             
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                // Android 10+ 使用新的 MediaStore API
                 val contentValues = ContentValues().apply {
                     put(MediaStore.MediaColumns.DISPLAY_NAME, filename)
                     put(MediaStore.MediaColumns.MIME_TYPE, "image/png")
@@ -195,19 +196,9 @@ private suspend fun saveBitmapToGallery(context: Context, bitmap: Bitmap, title:
                 val imageUri = context.contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)
                 fos = imageUri?.let { context.contentResolver.openOutputStream(it) }
             } else {
-                // Android 8-9 使用传统的 MediaStore API
-                val picturesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-                val monicaDir = java.io.File(picturesDir, "Monica")
-                if (!monicaDir.exists()) {
-                    monicaDir.mkdirs()
-                }
-                val imageFile = java.io.File(monicaDir, filename)
-                fos = java.io.FileOutputStream(imageFile)
-                
-                // 通知 MediaScanner 扫描文件，使其在相册中可见
-                val mediaScanIntent = android.content.Intent(android.content.Intent.ACTION_MEDIA_SCANNER_SCAN_FILE)
-                mediaScanIntent.data = android.net.Uri.fromFile(imageFile)
-                context.sendBroadcast(mediaScanIntent)
+                // For older versions, we might need WRITE_EXTERNAL_STORAGE permission
+                // But since minSdk is 29 (Android 10), we are safe with MediaStore API above
+                // If minSdk was lower, we would need legacy file handling
             }
             
             fos?.use {
@@ -220,10 +211,6 @@ private suspend fun saveBitmapToGallery(context: Context, bitmap: Bitmap, title:
             e.printStackTrace()
             withContext(Dispatchers.Main) {
                 Toast.makeText(context, "保存失败: ${e.message}", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
-}
             }
         }
     }
