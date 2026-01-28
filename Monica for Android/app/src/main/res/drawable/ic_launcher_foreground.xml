@@ -21,13 +21,10 @@
             android:strokeWidth="1.5"
             android:strokeLineCap="round"
             android:pathData="M-17,-14 Q-17,-19.7 0,-19.7 Q17,-19.7 17,-14" />
-        
         <!-- 锁孔 - 圆形部分 (白色) -->
-        <circle
+        <path
             android:fillColor="#FFFFFF"
-            android:cx="0"
-            android:cy="-5.6"
-            android:r="6.8" />
+            android:pathData="M0,-5.6m-6.8,0a6.8,6.8 0,1 1,13.6 0a6.8,6.8 0,1 1,-13.6 0" />
         
         <!-- 锁孔 - 下方的槽 (白色) -->
         <path
