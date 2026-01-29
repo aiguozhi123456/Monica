@@ -1,0 +1,1248 @@
+<resources>
+    <string name="app_name">Monica</string>
+    
+    <!-- General -->
+    <string name="accessibility_service_description">Dịch vụ trợ năng Monica giúp cải thiện chức năng tự động điền bằng cách phát hiện trường mật khẩu chính xác hơn.</string>
+    
+    <string name="ok">OK</string>
+    <string name="cancel">Hủy</string>
+    <string name="save">Lưu</string>
+    <string name="delete">Xóa</string>
+    <string name="edit">Sửa</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="settings">Cài đặt</string>
+    <string name="back">Quay lại</string>
+    <string name="close">Đóng</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="share">Chia sẻ</string>
+    <string name="no_results">Không tìm thấy kết quả</string>
+    
+    <!-- Swipe Actions -->
+    <string name="swipe_action_select">Chọn</string>
+    <string name="swipe_action_delete">Xóa</string>
+    
+    <!-- Autofill Authentication -->
+    <string name="autofill_auth_title">Xác minh để tự động điền</string>
+    <string name="autofill_auth_subtitle">Sử dụng vân tay hoặc mật khẩu</string>
+    <string name="autofill_auth_description">Tự động điền sau khi xác minh</string>
+    
+    <!-- 🔐 Password Suggestion -->
+    <string name="password_suggestion">Gợi ý mật khẩu mạnh</string>
+    <string name="password_suggestion_title">Tạo mật khẩu mạnh</string>
+    <string name="password_suggestion_subtitle">Monica sẽ tạo mật khẩu an toàn cho bạn</string>
+    <string name="password_suggestion_accept">Sử dụng mật khẩu này</string>
+    <string name="password_suggestion_decline">Không, cảm ơn</string>
+    <string name="password_suggestion_copied">Đã sao chép mật khẩu</string>
+    
+    <!-- Login Screen -->
+    <string name="setup_master_password">Thiết lập mật khẩu chính của bạn</string>
+    <string name="enter_master_password">Nhập mật khẩu chính của bạn</string>
+    <string name="master_password">Mật khẩu chính</string>
+    <string name="confirm_master_password">Xác nhận mật khẩu chính</string>
+    <string name="set_up_password">Thiết lập mật khẩu</string>
+    <string name="unlock">Mở khóa</string>
+    <string name="use_biometric">Sử dụng xác thực sinh trắc học</string>
+    <string name="biometric_title">Xác thực sinh trắc học</string>
+    <string name="biometric_subtitle">Sử dụng vân tay hoặc khuôn mặt để mở khóa Monica</string>
+    <string name="use_master_password">Sử dụng mật khẩu chính</string>
+    <string name="show_password">Hiển thị mật khẩu</string>
+    <string name="hide_password">Ẩn mật khẩu</string>
+    
+    <!-- Biometric Authentication -->
+    <string name="biometric_login_title">Mở khóa Monica</string>
+    <string name="biometric_login_subtitle">Xác minh danh tính của bạn</string>
+    <string name="biometric_login_description">Sử dụng vân tay để mở khóa</string>
+    <string name="biometric_available">Xác thực sinh trắc học khả dụng</string>
+    <string name="biometric_no_hardware">Không có phần cứng sinh trắc học</string>
+    <string name="biometric_hw_unavailable">Phần cứng sinh trắc học không khả dụng</string>
+    <string name="biometric_none_enrolled">Chưa đăng ký sinh trắc học. Vui lòng thiết lập vân tay hoặc khuôn mặt trong cài đặt hệ thống</string>
+    <string name="biometric_not_available">Xác thực sinh trắc học không khả dụng</string>
+    <string name="biometric_error">Lỗi xác thực sinh trắc học: %s</string>
+    <string name="biometric_success">Xác thực thành công</string>
+    <string name="biometric_unlock">Mở khóa bằng vân tay</string>
+    <string name="biometric_unlock_enabled">Đã bật mở khóa bằng vân tay</string>
+    <string name="biometric_unlock_disabled">Đã tắt mở khóa bằng vân tay</string>
+    <string name="biometric_cannot_enable">Không thể bật mở khóa bằng vân tay</string>
+    <string name="biometric_weak_warning_title">Phát hiện sinh trắc học yếu</string>
+    <string name="biometric_weak_warning_message">Thiết bị này chỉ hỗ trợ sinh trắc học yếu, khả năng chống giả mạo thấp hơn. Bạn có muốn tiếp tục bật mở khóa bằng vân tay không?</string>
+    <string name="biometric_weak_warning_confirm">Tiếp tục</string>
+    <string name="biometric_weak_warning_cancel">Hủy</string>
+    
+    <!-- Password List Screen -->
+    <string name="search_passwords">Tìm kiếm mật khẩu...</string>
+    <string name="no_passwords_saved">Chưa lưu mật khẩu nào</string>
+    <string name="no_passwords_found">Không tìm thấy mật khẩu</string>
+    <string name="add_password">Thêm mật khẩu</string>
+    <string name="clear_search">Xóa tìm kiếm</string>
+    <string name="logout_confirmation">Bạn có chắc chắn muốn đăng xuất?</string>
+    <string name="copy_username">Sao chép TK</string>
+    <string name="copy_password">Sao chép MK</string>
+    <string name="copy">Sao chép</string>
+    <string name="username_copied">Tên người dùng đã được sao chép vào clipboard</string>
+    <string name="password_copied">Mật khẩu đã được sao chép vào clipboard</string>
+    
+    <!-- Form Fields -->
+    <string name="field_email">Email</string>
+    <string name="field_phone">SĐT</string>
+    <string name="field_address">Địa chỉ</string>
+    <string name="field_address_placeholder">Đường, số nhà, v.v.</string>
+    <string name="field_city">Thành phố</string>
+    <string name="field_state">Tỉnh</string>
+    <string name="field_postal_code">Mã BC</string>
+    <string name="field_country">Quốc gia</string>
+    <string name="field_card_number">Số thẻ</string>
+    <string name="field_card_valid">✓ Hợp lệ</string>
+    <string name="field_cardholder">Chủ thẻ</string>
+    <string name="field_expiry">Hết hạn</string>
+    <string name="field_cvv">CVV</string>
+    
+    <!-- Add/Edit Password Screen -->
+    <string name="add_password_title">Thêm mật khẩu</string>
+    <string name="edit_password_title">Sửa mật khẩu</string>
+    <string name="title_required">Tiêu đề *</string>
+    <string name="website_url">Trang web/URL</string>
+    <string name="username_email">Tên người dùng/Email</string>
+    <string name="password_required">Mật khẩu *</string>
+    <string name="notes">Ghi chú</string>
+    <string name="generate_password">Tạo mật khẩu</string>
+    <string name="password_strength_very_weak">Rất yếu</string>
+    <string name="password_strength_weak">Yếu</string>
+    <string name="password_strength_moderate">Trung bình</string>
+    <string name="password_strength_strong">Mạnh</string>
+    <string name="password_strength_very_strong">Rất mạnh</string>
+    
+    <!-- Password Generator -->
+    <string name="password_generator_title">Trình tạo mật khẩu</string>
+    <string name="length">Độ dài: %d</string>
+    <string name="length_value">Độ dài: %d</string>
+    <string name="uppercase_letters">Chữ hoa (A-Z)</string>
+    <string name="uppercase_az">Chữ hoa (A-Z)</string>
+    <string name="lowercase_letters">Chữ thường (a-z)</string>
+    <string name="lowercase_az">Chữ thường (a-z)</string>
+    <string name="numbers">Số (0-9)</string>
+    <string name="numbers_09">Số (0-9)</string>
+    <string name="symbols">Ký hiệu (!@#$...)</string>
+    <string name="exclude_similar">Loại trừ ký tự giống nhau</string>
+    <string name="analyze_common_passwords">Phân tích mật khẩu phổ biến</string>
+    <string name="analyze_common_passwords_desc">Phân tích mật khẩu đã lưu để tạo mật khẩu tương tự và dễ nhớ</string>
+    <string name="analyze_weight_label">Mức độ tương đồng: %d</string>
+    <string name="use_password">Sử dụng mật khẩu</string>
+    <string name="generate_new_password">Tạo mật khẩu mới</string>
+    <string name="show">Hiển thị</string>
+    <string name="hide">Ẩn</string>
+    
+    <!-- TOTP Authenticator -->
+    <string name="add_totp_title">Thêm xác thực</string>
+    <string name="edit_totp_title">Sửa xác thực</string>
+    <string name="totp_name_required">Tên *</string>
+    <string name="totp_name_example">Ví dụ: Tài khoản Google</string>
+    <string name="enter_name">Vui lòng nhập tên</string>
+    <string name="secret_key_required">Khóa bí mật *</string>
+    <string name="secret_key_example">ABCD EFGH IJKL MNOP</string>
+    <string name="secret_key_hint">Khóa bí mật được mã hóa Base32, thường hiển thị dưới mã QR</string>
+    <string name="enter_secret_key">Vui lòng nhập khóa bí mật</string>
+    <string name="scan_qr_code">Quét mã QR</string>
+    <string name="issuer">Nhà phát hành</string>
+    <string name="issuer_example">Ví dụ: Google</string>
+    <string name="account_name">Tên tài khoản</string>
+    <string name="account_name_example">Ví dụ: user@gmail.com</string>
+    <string name="notes_optional">Ghi chú tùy chọn</string>
+    <string name="advanced_options">Tùy chọn nâng cao</string>
+    <string name="time_period_seconds">Thời gian (giây)</string>
+    <string name="usually_30_seconds">Thường là 30 giây</string>
+    <string name="code_digits">Số chữ số</string>
+    <string name="usually_6_digits">Thường là 6 chữ số</string>
+    <string name="how_to_get_secret_key">Cách lấy khóa bí mật?</string>
+    <string name="secret_key_instructions">1. Tìm cài đặt \"Xác thực hai yếu tố\" trên trang web\n2. Chọn \"Sử dụng ứng dụng xác thực\"\n3. Sao chép khóa bí mật được hiển thị hoặc quét mã QR\n4. Dán khóa vào ô nhập phía trên</string>
+    
+    <!-- OTP Types -->
+    <string name="otp_type">Loại OTP</string>
+    <string name="otp_type_totp">Dựa trên thời gian (TOTP)</string>
+    <string name="otp_type_hotp">Dựa trên bộ đếm (HOTP)</string>
+    <string name="otp_type_steam">Steam Guard</string>
+    <string name="otp_type_yandex">Yandex</string>
+    <string name="otp_type_motp">Mobile-OTP</string>
+    <string name="initial_counter">Bộ đếm ban đầu</string>
+    <string name="counter_value">Bộ đếm: %d</string>
+    <string name="generate_next">Tạo tiếp theo</string>
+    <string name="pin_code">Mã PIN</string>
+    <string name="pin_code_hint">Mã PIN cần thiết cho Mobile-OTP</string>
+    <string name="pin_code_example">Ví dụ: 1234</string>
+    <string name="enter_pin_code">Vui lòng nhập mã PIN</string>
+    <string name="steam_uses_5_chars">Steam sử dụng mã 5 ký tự</string>
+    <string name="hotp_counter_hint">Bộ đếm tăng 1 sau mỗi lần sử dụng</string>
+    <string name="motp_pin_hint">Mã PIN 4 chữ số để mã hóa Mobile-OTP</string>
+    <string name="otp_type_description_totp">Mã xác thực dựa trên thời gian, làm mới mỗi 30 giây</string>
+    <string name="otp_type_description_hotp">Mã xác thực dựa trên bộ đếm, tạo mã mới mỗi lần</string>
+    <string name="otp_type_description_steam">Mã xác thực Steam Guard 5 ký tự</string>
+    <string name="otp_type_description_yandex">Mã xác thực Yandex</string>
+    <string name="otp_type_description_motp">Mobile-OTP với bảo vệ mã PIN</string>
+    
+    <!-- Bank Card -->
+    <string name="add_bank_card_title">Thêm thẻ ngân hàng</string>
+    <string name="edit_bank_card_title">Sửa thẻ ngân hàng</string>
+    <string name="no_bank_cards_title">Chưa có thẻ ngân hàng</string>
+    <string name="no_bank_cards_description">Nhấn nút + ở góc dưới bên phải để thêm thẻ ngân hàng đầu tiên</string>
+    <string name="card_name">Tên thẻ</string>
+    <string name="card_name_example">Ví dụ: Thẻ lương</string>
+    <string name="bank_name">Tên ngân hàng</string>
+    <string name="bank_name_example">Ví dụ: Vietcombank</string>
+    <string name="card_type">Loại thẻ</string>
+    <string name="debit_card">Thẻ ghi nợ</string>
+    <string name="credit_card">Thẻ tín dụng</string>
+    <string name="prepaid_card">Thẻ trả trước</string>
+    <string name="card_number_required">Số thẻ *</string>
+    <string name="cardholder_name">Tên chủ thẻ</string>
+    <string name="expiry_date">Ngày hết hạn</string>
+    <string name="month">Tháng</string>
+    <string name="year">Năm</string>
+    <string name="cvv">CVV</string>
+    <string name="billing_address">Địa chỉ thanh toán</string>
+    <string name="add_billing_address">Thêm địa chỉ thanh toán</string>
+    <string name="edit_billing_address">Sửa địa chỉ thanh toán</string>
+    <string name="billing_address_empty">Chưa lưu địa chỉ thanh toán</string>
+    <string name="remove_billing_address">Xóa địa chỉ thanh toán</string>
+    <string name="billing_address_removed">Đã xóa địa chỉ thanh toán</string>
+    <string name="street_address">Địa chỉ đường</string>
+    <string name="street_address_placeholder">123 Đường ABC</string>
+    <string name="apartment">Căn hộ / Phòng (Tùy chọn)</string>
+    <string name="apartment_placeholder">Căn hộ 4B</string>
+    <string name="city">Thành phố</string>
+    <string name="city_placeholder">Hà Nội</string>
+    <string name="state_province">Tỉnh / Thành phố</string>
+    <string name="state_province_placeholder">Hà Nội</string>
+    <string name="postal_code">Mã bưu chính</string>
+    <string name="postal_code_placeholder">100000</string>
+    <string name="country">Quốc gia</string>
+    <string name="country_placeholder">Việt Nam</string>
+    <string name="billing_address_saved">Đã lưu địa chỉ thanh toán</string>
+    <string name="notes_placeholder">Thêm ghi chú...</string>
+    <string name="bottom_nav_settings">Thanh điều hướng dưới</string>
+    <string name="bottom_nav_toggle_subtitle">Hiển thị hoặc ẩn tab này trên thanh điều hướng dưới</string>
+    <string name="bottom_nav_reorder_hint">Sử dụng các mũi tên để sắp xếp lại các tab. Cài đặt luôn ở cuối.</string>
+    <string name="bottom_nav_move_up">Di chuyển tab lên</string>
+    <string name="bottom_nav_move_down">Di chuyển tab xuống</string>
+    <string name="bottom_nav_settings_entry_subtitle">Chọn các tab hiển thị và sắp xếp lại</string>
+    
+    <!-- Document -->
+    <string name="add_document_title">Thêm tài liệu</string>
+    <string name="edit_document_title">Sửa tài liệu</string>
+    <string name="no_documents_title">Chưa có tài liệu</string>
+    <string name="no_documents_description">Nhấn nút + ở góc dưới bên phải để thêm tài liệu đầu tiên</string>
+    <string name="document_name">Tên tài liệu</string>
+    <string name="document_name_example">Ví dụ: Căn cước công dân</string>
+    <string name="document_type">Loại tài liệu</string>
+    <string name="id_card">Căn cước công dân</string>
+    <string name="passport">Hộ chiếu</string>
+    <string name="drivers_license">Giấy phép lái xe</string>
+    <string name="social_security_card">Thẻ bảo hiểm xã hội</string>
+    <string name="other_document">Tài liệu khác</string>
+    <string name="document_number_required">Số tài liệu *</string>
+    <string name="holder_name">Tên chủ sở hữu</string>
+    <string name="holder_name_example">Nguyễn Văn A</string>
+    <string name="issue_date">Ngày cấp</string>
+    <string name="expiry_date_label">Ngày hết hạn</string>
+    <string name="issuing_authority">Cơ quan cấp</string>
+    <string name="issuing_authority_example">Ví dụ: Công an tỉnh ABC</string>
+    <string name="document_encryption_notice">Tất cả thông tin tài liệu và ảnh được mã hóa và lưu trữ cục bộ trên thiết bị của bạn</string>
+    <string name="document_photo_front">Ảnh %s (Mặt trước)</string>
+    <string name="document_photo_back">Ảnh %s (Mặt sau, Tùy chọn)</string>
+    
+    <!-- Document Card Labels -->
+    <string name="document_number_label">Số giấy tờ</string>
+    <string name="holder_label">Người giữ</string>
+    <string name="valid_until">Có hiệu lực đến</string>
+    
+    <!-- Bank Card Labels -->
+    <string name="cardholder_label">Chủ thẻ</string>
+    <string name="expiry_label">Hết hạn</string>
+    
+    <!-- Menu Actions -->
+    <string name="move_up">Di chuyển lên</string>
+    <string name="move_down">Di chuyển xuống</string>
+    
+    <!-- Content Descriptions -->
+    <string name="favorite">Yêu thích</string>
+    <string name="more_options">Thêm tùy chọn</string>
+    
+    <!-- Document Type Names -->
+    <string name="document_type_id_card">Căn cước công dân</string>
+    <string name="document_type_passport">Hộ chiếu</string>
+    <string name="document_type_driver_license">Giấy phép lái xe</string>
+    <string name="document_type_social_security">Thẻ bảo hiểm xã hội</string>
+    <string name="document_type_other">Tài liệu khác</string>
+    
+    <!-- TOTP List -->
+    <string name="search_authenticator">Tìm kiếm xác thực</string>
+    <string name="clear">Xóa</string>
+    <string name="no_authenticators_title">Chưa có xác thực</string>
+    <string name="no_authenticators_description">Nhấn nút + ở góc dưới bên phải để thêm xác thực</string>
+    <string name="delete_authenticator_title">Xóa xác thực</string>
+    <string name="delete_authenticator_message">Bạn có chắc chắn muốn xóa "%s"? Hành động này không thể hoàn tác.</string>
+    <string name="delete_document_title">Xóa tài liệu</string>
+    <string name="delete_document_message">Bạn có chắc chắn muốn xóa "%s"? Hành động này không thể hoàn tác.</string>
+    <string name="delete_bank_card_title">Xóa thẻ ngân hàng</string>
+    <string name="delete_bank_card_message">Bạn có chắc chắn muốn xóa "%s"? Hành động này không thể hoàn tác.</string>
+    
+    <!-- QR Scanner -->
+    <string name="scan_qr_code_title">Quét mã QR</string>
+    <string name="grant_permission">Cấp quyền</string>
+    <string name="go_back">Quay lại</string>
+    <string name="camera_permission_required">Quét mã QR cần quyền truy cập camera. Vui lòng cấp quyền camera để tiếp tục.</string>
+    
+    <!-- Image Picker -->
+    <string name="gallery">Thư viện</string>
+    <string name="camera">Máy ảnh</string>
+    <string name="download">Tải xuống</string>
+    <string name="download_success">Ảnh đã được lưu vào thư viện thành công</string>
+    <string name="download_failed">Lưu ảnh thất bại</string>
+    <string name="camera_permission_needed">Cần quyền truy cập camera để chụp ảnh</string>
+    <string name="error_launch_gallery">Không thể mở thư viện: %1$s</string>
+    <string name="error_launch_camera">Không thể mở máy ảnh: %1$s</string>
+    
+    <!-- Export/Import Data -->
+    <string name="export_data_title">Xuất dữ liệu</string>
+    <string name="exporting">Đang xuất...</string>
+    <string name="start_export">Bắt đầu xuất</string>
+    <string name="error_export_failed">Xuất thất bại</string>
+    <string name="error_launch_export">Không thể mở trình chọn tệp: %1$s</string>
+    <string name="import_data_title">Nhập dữ liệu</string>
+    <string name="importing">Đang nhập...</string>
+    <string name="start_import">Bắt đầu nhập</string>
+    <string name="export_data_description">Xuất tất cả dữ liệu của bạn dưới dạng tệp CSV vào bộ nhớ cục bộ. Bạn có thể sử dụng tệp này để sao lưu hoặc di chuyển dữ liệu.</string>
+    <string name="export_data_select_type">Chọn loại dữ liệu để xuất:</string>
+    <string name="export_data_type_passwords">Mật khẩu</string>
+    <string name="export_data_type_totp">Mã TOTP</string>
+    <string name="export_data_type_bank_cards">Thẻ ngân hàng</string>
+    <string name="export_data_type_documents">Tài liệu</string>
+    <string name="export_data_type_all">Tất cả dữ liệu</string>
+    <string name="export_data_button">Xuất</string>
+    <string name="export_data_success">Xuất dữ liệu thành công</string>
+    <string name="export_data_error">Xuất thất bại</string>
+    <string name="export_data_warning">Tệp CSV không được mã hóa, vui lòng giữ tệp đã xuất an toàn</string>
+    <string name="import_data_description">Nhập dữ liệu từ tệp sao lưu CSV. Vui lòng đảm bảo định dạng tệp là chính xác.</string>
+    <string name="import_data_warning_title">Cảnh báo</string>
+    <string name="import_data_warning_message">Nhập dữ liệu có thể ghi đè dữ liệu hiện có. Vui lòng sao lưu dữ liệu hiện tại trước khi nhập.</string>
+    <string name="import_data_select_file">Chọn tệp</string>
+    <string name="import_data_button">Nhập</string>
+    <string name="import_data_success">Nhập dữ liệu thành công</string>
+    <string name="import_data_error">Nhập thất bại</string>
+    <string name="import_data_supported_formats">Hỗ trợ tệp CSV được xuất bởi ứng dụng và chi tiết giao dịch Alipay</string>
+    <string name="import_data_select_type">Chọn loại nhập</string>
+    <string name="import_data_type_normal">Dữ liệu ứng dụng</string>
+    <string name="import_data_type_alipay">Hóa đơn Alipay</string>
+    <string name="import_data_file_selected">Đã chọn tệp</string>
+    <string name="import_data_file_hint">Nhấn để chọn tệp .csv</string>
+    <string name="import_data_file_hint_csv">Nhấn để chọn tệp .csv</string>
+    <string name="import_data_file_hint_csv_alipay">Nhấn để chọn tệp Alipay .csv</string>
+    <string name="import_data_file_hint_json">Nhấn để chọn tệp .json</string>
+    <string name="import_data_success_normal">Đã nhập thành công %d mục dữ liệu</string>
+    <string name="import_data_success_alipay">Đã nhập thành công %d giao dịch Alipay</string>
+    <string name="import_data_error_exception">Nhập thất bại: %s</string>
+    <string name="import_data_notice">Dữ liệu đã nhập sẽ được thêm vào dữ liệu hiện có, dữ liệu hiện tại sẽ không bị xóa</string>
+    
+    <!-- Support Author -->
+    <string name="support_author_title">Ủng hộ tác giả</string>
+    <string name="software_free_title">💝 Phần mềm hoàn toàn miễn phí</string>
+    <string name="software_free_description">Monica Password Manager là phần mềm mã nguồn mở hoàn toàn miễn phí, không có phí bắt buộc. Tất cả các tính năng đều có sẵn miễn phí.</string>
+    <string name="if_helpful_title">🙏 Nếu bạn thấy ứng dụng này hữu ích</string>
+    <string name="support_ways_description">Hãy tự do ủng hộ tác giả phát triển tiếp theo thông qua các cách sau:</string>
+    <string name="support_author_qr">Ủng hộ tác giả ❤️</string>
+    <string name="qr_code_description">Mã QR ủng hộ tác giả</string>
+    <string name="save_qr_code">Lưu mã QR vào album</string>
+    <string name="your_support_message">Sự ủng hộ của bạn là động lực để tôi tiếp tục phát triển!</string>
+    <string name="thank_you_title">Cảm ơn bạn đã sử dụng Monica Password Manager!</string>
+    <string name="thank_you_message">Hy vọng nó mang lại sự an toàn và thuận tiện cho cuộc sống số của bạn.</string>
+    <string name="storage_permission_needed">Cần quyền lưu trữ để lưu ảnh</string>
+    <string name="qr_code_saved">Mã QR đã được lưu vào album</string>
+    <string name="save_failed">Lưu thất bại</string>
+    <string name="save_failed_with_error">Lưu thất bại: %s</string>
+    
+    <!-- Password Entry Card -->
+    <string name="username">Tên người dùng</string>
+    <string name="password">Mật khẩu</string>
+    <string name="password_hidden">••••••••</string>
+    <string name="delete_password_title">Xóa mật khẩu</string>
+    <string name="delete_password_message">Bạn có chắc chắn muốn xóa "%s"?</string>
+    
+    <!-- Error Messages -->
+    <string name="error_password_too_short">Mật khẩu chính phải có ít nhất 6 ký tự</string>
+    <string name="error_password_must_be_6_digits">Mật khẩu phải là 6 chữ số</string>
+    <string name="error_password_min_6_digits">Mật khẩu phải có ít nhất 6 chữ số</string>
+    <string name="error_password_must_be_numeric">Mật khẩu chỉ được chứa số</string>
+    <string name="error_passwords_not_match">Mật khẩu không khớp</string>
+    <string name="error_invalid_password">Mật khẩu chính không hợp lệ</string>
+    <string name="error_authentication_failed">Xác thực thất bại</string>
+    <string name="error_title_required">Tiêu đề là bắt buộc</string>
+    <string name="error_password_required">Mật khẩu là bắt buộc</string>
+    <string name="password_min_6_digits">Tối thiểu 6 chữ số</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="theme">Giao diện</string>
+    <string name="security">Bảo mật</string>
+    <string name="auto_lock">Tự động khóa</string>
+    <string name="auto_lock_summary">Khóa ứng dụng sau khi không hoạt động</string>
+    <string name="about">Giới thiệu</string>
+    <string name="version">Phiên bản</string>
+    
+    <!-- Language Options -->
+    <string name="language_system">Mặc định hệ thống</string>
+    <string name="language_english">English</string>
+    <string name="language_chinese">中文</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_japanese">日本語</string>
+    <string name="cannot_open_browser">Không thể mở trình duyệt</string>
+    
+    <!-- Theme Options -->
+    <string name="theme_system">Mặc định hệ thống</string>
+    <string name="theme_light">Sáng</string>
+    <string name="theme_dark">Tối</string>
+    
+    <!-- Auto Lock Options -->
+    <string name="auto_lock_immediately">Ngay lập tức</string>
+    <string name="auto_lock_1_minute">1 phút</string>
+    <string name="auto_lock_5_minutes">5 phút</string>
+    <string name="auto_lock_15_minutes">15 phút</string>
+    <string name="auto_lock_30_minutes">30 phút</string>
+    <string name="auto_lock_10_minutes">10 phút</string>
+    <string name="auto_lock_1_hour">1 giờ</string>
+    <string name="auto_lock_5_hours">5 giờ</string>
+    <string name="auto_lock_1_day">1 ngày</string>
+    <string name="auto_lock_never">Không bao giờ</string>
+    
+    <!-- Reset Password Screen -->
+    <string name="reset_password_title">Đặt lại mật khẩu</string>
+    <string name="reset_password">Đặt lại mật khẩu</string>
+    <string name="reset_master_password">Đặt lại mật khẩu chính</string>
+    <string name="reset_password_description">Vui lòng nhập mật khẩu hiện tại và đặt mật khẩu số mới (tối thiểu 6 chữ số)</string>
+    <string name="reset_password_verified_description">Vui lòng đặt mật khẩu số mới của bạn (tối thiểu 6 chữ số)</string>
+    <string name="current_password">Mật khẩu hiện tại</string>
+    <string name="enter_current_password">Nhập mật khẩu hiện tại</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="enter_new_password">Nhập mật khẩu số mới (tối thiểu 6 chữ số)</string>
+    <string name="confirm_new_password">Xác nhận mật khẩu mới</string>
+    <string name="enter_confirm_password">Xác nhận mật khẩu mới của bạn</string>
+    <string name="current_password_required">Mật khẩu hiện tại là bắt buộc</string>
+    <string name="new_password_required">Mật khẩu mới là bắt buộc</string>
+    <string name="current_password_incorrect">Mật khẩu hiện tại không chính xác</string>
+    <string name="password_reset_success">Đặt lại mật khẩu thành công</string>
+    <string name="password_reset_success_message">Mật khẩu chính của bạn đã được thay đổi thành công. Vui lòng nhớ mật khẩu mới của bạn.</string>
+    <string name="passwords_do_not_match">Mật khẩu không khớp</string>
+    <string name="password_too_short">Mật khẩu phải có ít nhất 6 ký tự</string>
+    
+    <!-- Forgot Password -->
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="forgot_password_title">Đặt lại ứng dụng</string>
+    <string name="forgot_password_warning">Điều này sẽ xóa vĩnh viễn tất cả mật khẩu đã lưu và đặt lại ứng dụng. Hành động này không thể hoàn tác.</string>
+    <string name="forgot_password_confirm">Bạn có chắc chắn muốn đặt lại tất cả dữ liệu?</string>
+    <string name="reset_all_data">Đặt lại tất cả dữ liệu</string>
+    <string name="data_reset_complete">Tất cả dữ liệu đã được đặt lại. Bạn có thể thiết lập mật khẩu chính mới.</string>
+    
+    <!-- Security Questions -->
+    <string name="security_questions">Câu hỏi bảo mật</string>
+    <string name="setup_security_questions">Thiết lập câu hỏi bảo mật</string>
+    <string name="edit_security_questions">Sửa câu hỏi bảo mật</string>
+    <string name="security_questions_description">Thiết lập câu hỏi bảo mật để khôi phục mật khẩu nếu bạn quên. Những câu hỏi này sẽ giúp xác minh danh tính của bạn.</string>
+    <string name="security_question_1">Câu hỏi bảo mật 1</string>
+    <string name="security_question_2">Câu hỏi bảo mật 2</string>
+    <string name="select_question">Chọn một câu hỏi</string>
+    <string name="your_answer">Câu trả lời của bạn</string>
+    <string name="enter_answer_hint">Nhập câu trả lời của bạn (không phân biệt chữ hoa chữ thường)</string>
+    <string name="save_questions">Lưu câu hỏi bảo mật</string>
+    <string name="update_questions">Cập nhật câu hỏi bảo mật</string>
+    <string name="select_first_question">Vui lòng chọn câu hỏi bảo mật đầu tiên</string>
+    <string name="select_second_question">Vui lòng chọn câu hỏi bảo mật thứ hai</string>
+    <string name="questions_must_be_different">Vui lòng chọn hai câu hỏi khác nhau</string>
+    <string name="first_answer_required">Vui lòng cung cấp câu trả lời cho câu hỏi đầu tiên</string>
+    <string name="second_answer_required">Vui lòng cung cấp câu trả lời cho câu hỏi thứ hai</string>
+    
+    <!-- Security Questions Verification -->
+    <string name="verify_identity">Xác minh danh tính</string>
+    <string name="answer_security_questions">Trả lời câu hỏi bảo mật</string>
+    <string name="security_questions_verify_description">Vui lòng trả lời câu hỏi bảo mật của bạn để đặt lại mật khẩu</string>
+    <string name="question_1">Câu hỏi 1:</string>
+    <string name="question_2">Câu hỏi 2:</string>
+    <string name="verify_answers">Xác minh câu trả lời</string>
+    <string name="incorrect_answers">Câu trả lời không chính xác. Vui lòng thử lại.</string>
+    <string name="verification_attempts" formatted="false">Lần thử: %d / %d</string>
+    <string name="too_many_attempts">Quá nhiều lần thử không chính xác. Vui lòng liên hệ hỗ trợ hoặc sử dụng tùy chọn đặt lại hoàn toàn.</string>
+    <string name="back_to_login">Quay lại đăng nhập</string>
+    
+    <!-- Main Screen Bottom Navigation -->
+    <string name="nav_passwords">Mật khẩu</string>
+    <string name="nav_authenticator">Xác thực</string>
+    <string name="nav_documents">Giấy tờ</string>
+    <string name="nav_bank_cards">Thẻ ngân hàng</string>
+    <string name="nav_notes">Ghi chú</string>
+    <string name="nav_ledger">Sổ kế toán</string>
+    <string name="nav_generator">Trình tạo</string>
+    <string name="nav_settings">Cài đặt</string>
+    <string name="add">Thêm</string>
+    
+    <!-- Main Screen Bottom Navigation (Short) -->
+    <string name="nav_passwords_short">MK</string>
+    <string name="nav_authenticator_short">XT</string>
+    <string name="nav_documents_short">GT</string>
+    <string name="nav_bank_cards_short">Thẻ</string>
+    <string name="nav_notes_short">Note</string>
+    <string name="nav_ledger_short">Sổ</string>
+    <string name="nav_generator_short">Tạo</string>
+    <string name="nav_settings_short">CĐ</string>
+
+    <!-- Notes -->
+    <string name="add_note_title">Thêm ghi chú</string>
+    <string name="edit_note_title">Sửa ghi chú</string>
+    <string name="note_content">Nội dung</string>
+    <string name="note_content_placeholder">Viết điều quan trọng cần nhớ...</string>
+    <string name="note_title_label">Tiêu đề</string>
+    <string name="note_title_placeholder">Ví dụ: Ý tưởng dự án</string>
+    <string name="no_notes_title">Chưa có ghi chú</string>
+    <string name="no_notes_description">Nhấn nút + để tạo ghi chú bảo mật đầu tiên của bạn</string>
+    <string name="delete_note_title">Xóa ghi chú</string>
+    <string name="delete_note_message">Bạn có chắc chắn muốn xóa "%s"? Hành động này không thể hoàn tác.</string>
+    <string name="search_notes">Tìm kiếm ghi chú</string>
+    <string name="batch_delete_notes_title">Xóa ghi chú</string>
+    <string name="batch_delete_notes_message">Xóa %1$d ghi chú đã chọn?</string>
+    <string name="note_tags">Thẻ</string>
+    <string name="note_tags_placeholder">Thẻ1, Thẻ2</string>
+    <string name="note_markdown_label">Định dạng Markdown</string>
+    <string name="note_detail_title">Ghi chú</string>
+    <string name="note_detail_not_found_title">Ghi chú không khả dụng</string>
+    <string name="note_detail_not_found_message">Ghi chú bạn đang tìm có thể đã bị xóa hoặc di chuyển.</string>
+    <string name="note_detail_copied">Đã sao chép ghi chú vào clipboard</string>
+    <string name="note_detail_share_title">Chia sẻ ghi chú</string>
+    <string name="note_detail_tags_label">Thẻ</string>
+    <string name="note_detail_preview_tab">Xem trước</string>
+    <string name="note_detail_raw_tab">Văn bản thuần</string>
+    <string name="note_detail_preview_fullscreen">Xem trước toàn màn hình</string>
+    <string name="note_detail_preview_fullscreen_title">Xem trước Markdown</string>
+    <string name="note_detail_empty_content">Ghi chú này trống.</string>
+    <string name="note_detail_additional_notes">Ghi chú bổ sung</string>
+    <string name="note_detail_updated_at">Cập nhật lần cuối</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_general">Chung</string>
+    <string name="settings_security">Bảo mật</string>
+    <string name="settings_data_management">Quản lý dữ liệu</string>
+    <string name="settings_about">Giới thiệu</string>
+    <string name="settings_language_description">Ngôn ngữ</string>
+    <string name="settings_auto_lock_title">Tự động khóa</string>
+    <string name="settings_auto_lock_description">Khóa ứng dụng khi không hoạt động</string>
+    <string name="settings_biometric_title">Xác thực sinh trắc học</string>
+    <string name="settings_biometric_description">Sử dụng vân tay hoặc khuôn mặt</string>
+    <string name="settings_change_password">Đổi mật khẩu chính</string>
+    <string name="settings_change_password_description">Thay đổi mật khẩu đăng nhập</string>
+    <string name="settings_security_questions">Câu hỏi bảo mật</string>
+    <string name="settings_security_questions_description">Đặt câu hỏi bảo mật để khôi phục mật khẩu</string>
+    <string name="settings_bottom_sheet_title">Chế độ ngăn kéo dưới</string>
+    <string name="settings_bottom_sheet_description">Bật điều hướng ngăn kéo có thể kéo lên</string>
+    <string name="settings_export_data">Xuất dữ liệu</string>
+    <string name="settings_export_data_description">Xuất dưới dạng file CSV cục bộ</string>
+    <string name="settings_import_data">Nhập dữ liệu</string>
+    <string name="settings_import_data_description">Khôi phục từ file sao lưu</string>
+    <string name="settings_version_info">Thông tin phiên bản</string>
+    <string name="settings_version_number">V1.0.25</string>
+    <string name="settings_support_author">Ủng hộ tác giả</string>
+    <string name="settings_support_author_description">Cảm ơn sự ủng hộ của bạn</string>
+    <string name="settings_privacy_policy">Chính sách bảo mật</string>
+    
+    <!-- Bottom Sheet -->
+    <string name="all_navigation_items">Tất cả mục điều hướng</string>
+    <string name="hidden">Đã ẩn</string>
+    
+    <!-- Language Selection Dialog -->
+    <string name="dialog_select_language">Chọn ngôn ngữ</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_english_name">English</string>
+    
+    <!-- Change Password Screen -->
+    <string name="change_password_title">Đổi mật khẩu chính</string>
+    <string name="change_password_warning_title">Thông báo quan trọng</string>
+    <string name="change_password_warning_message">Sau khi đổi mật khẩu chính, tất cả dữ liệu đã lưu sẽ được mã hóa lại bằng mật khẩu mới. Hãy chắc chắn rằng bạn có thể nhớ mật khẩu mới, nếu không bạn sẽ không thể truy cập dữ liệu của mình.</string>
+    <string name="change_password_current">Mật khẩu hiện tại *</string>
+    <string name="change_password_new">Mật khẩu mới *</string>
+    <string name="change_password_confirm">Xác nhận mật khẩu mới *</string>
+    <string name="change_password_hint">Mật khẩu phải có ít nhất 6 chữ số</string>
+    <string name="change_password_button">Đổi mật khẩu</string>
+    <string name="change_password_success_title">Đổi mật khẩu thành công</string>
+    <string name="change_password_success_message">Mật khẩu chính của bạn đã được đổi thành công và tất cả dữ liệu đã được mã hóa lại bằng mật khẩu mới. Vui lòng đăng nhập bằng mật khẩu mới.</string>
+    <string name="change_password_error_current_empty">Vui lòng nhập mật khẩu hiện tại</string>
+    <string name="change_password_error_new_empty">Vui lòng nhập mật khẩu mới</string>
+    <string name="change_password_error_new_too_short">Mật khẩu mới phải có ít nhất 6 chữ số</string>
+    <string name="change_password_error_confirm_empty">Vui lòng xác nhận mật khẩu mới</string>
+    <string name="change_password_error_not_match">Mật khẩu mới không khớp</string>
+    <string name="change_password_error_same_as_current">Mật khẩu mới không thể giống mật khẩu hiện tại</string>
+    <string name="show_password_desc">Hiện mật khẩu</string>
+    <string name="hide_password_desc">Ẩn mật khẩu</string>
+    
+    <!-- Security Question Screen -->
+    <string name="security_question_title">Câu hỏi bảo mật</string>
+    <string name="security_question_description">Thiết lập câu hỏi bảo mật để khôi phục mật khẩu nếu bạn quên. Những câu hỏi này sẽ giúp xác minh danh tính của bạn.</string>
+    <string name="security_question_label_1">Câu hỏi bảo mật 1 *</string>
+    <string name="security_question_label_2">Câu hỏi bảo mật 2 *</string>
+    <string name="security_question_label_3">Câu hỏi bảo mật 3 *</string>
+    <string name="security_question_select">Chọn một câu hỏi</string>
+    <string name="security_question_custom">Câu hỏi tùy chỉnh</string>
+    <string name="security_question_answer">Câu trả lời của bạn *</string>
+    <string name="security_question_answer_hint">Nhập câu trả lời của bạn (không phân biệt chữ hoa chữ thường)</string>
+    <string name="security_question_save">Lưu câu hỏi bảo mật</string>
+    <string name="security_question_success_title">Thiết lập thành công</string>
+    <string name="security_question_success_message">Câu hỏi bảo mật đã được thiết lập thành công. Bạn có thể sử dụng những câu hỏi này để khôi phục mật khẩu nếu bạn quên.</string>
+    <string name="security_question_error_q1_empty">Vui lòng chọn câu hỏi bảo mật đầu tiên</string>
+    <string name="security_question_error_q2_empty">Vui lòng chọn câu hỏi bảo mật thứ hai</string>
+    <string name="security_question_error_q3_empty">Vui lòng chọn câu hỏi bảo mật thứ ba</string>
+    <string name="security_question_error_duplicate">Tất cả câu hỏi phải khác nhau</string>
+    <string name="security_question_error_a1_empty">Vui lòng cung cấp câu trả lời cho câu hỏi đầu tiên</string>
+    <string name="security_question_error_a2_empty">Vui lòng cung cấp câu trả lời cho câu hỏi thứ hai</string>
+    <string name="security_question_error_a3_empty">Vui lòng cung cấp câu trả lời cho câu hỏi thứ ba</string>
+    
+    <!-- Preset Security Questions -->
+    <string name="security_question_preset_1">Tên khai sinh của mẹ bạn là gì?</string>
+    <string name="security_question_preset_2">Tên của con vật cưng đầu tiên của bạn là gì?</string>
+    <string name="security_question_preset_3">Bạn sinh ra ở thành phố nào?</string>
+    <string name="security_question_preset_4">Cuốn sách yêu thích của bạn là gì?</string>
+    <string name="security_question_preset_5">Tên trường tiểu học của bạn là gì?</string>
+    <string name="security_question_preset_6">Món ăn yêu thích của bạn là gì?</string>
+    <string name="security_question_preset_7">Biệt danh thời thơ ấu của bạn là gì?</string>
+    <string name="security_question_preset_8">Tên người bạn thân nhất thời thơ ấu của bạn là gì?</string>
+    <string name="security_question_preset_9">Công việc đầu tiên của bạn là gì?</string>
+    <string name="security_question_preset_10">Bộ phim yêu thích của bạn là gì?</string>
+    
+    <!-- Support Author Screen (legacy) -->
+    <string name="support_author_description">Nếu bạn thấy ứng dụng này hữu ích, hãy cân nhắc ủng hộ tác giả. Sự ủng hộ của bạn là động lực lớn nhất để chúng tôi tiếp tục cải thiện!</string>
+    <string name="support_author_thanks">Cảm ơn bạn!</string>
+    <string name="support_author_thanks_message">Cảm ơn bạn đã sử dụng Monica Password Manager. Sự ủng hộ của bạn có ý nghĩa rất lớn!</string>
+    
+    <!-- Common -->
+    <string name="search_passwords_hint">Tìm kiếm mật khẩu</string>
+    <string name="return_text">Quay lại</string>
+    <string name="confirm">Xác nhận</string>
+    
+    <!-- Screenshot Protection -->
+    <string name="screenshot_protection">Bảo vệ ảnh chụp màn hình</string>
+    <string name="screenshot_protection_enabled">Đã bật - Bảo vệ thông tin nhạy cảm</string>
+    <string name="screenshot_protection_disabled">Đã tắt - Cho phép chụp màn hình</string>
+    
+    <!-- Dynamic Color -->
+    <string name="disable_wallpaper_color_extraction">Tắt trích xuất màu từ hình nền</string>
+    <string name="disable_wallpaper_color_extraction_description">Sử dụng bảng màu mặc định thay vì trích xuất màu từ hình nền</string>
+    
+    <!-- Color Scheme -->
+    <string name="color_scheme">Bảng màu</string>
+    <string name="color_scheme_description">Chọn bảng màu cho ứng dụng</string>
+    <string name="default_color_scheme">Mặc định</string>
+    <string name="ocean_blue_scheme">Xanh đại dương</string>
+    <string name="sunset_orange_scheme">Cam hoàng hôn</string>
+    <string name="forest_green_scheme">Xanh rừng</string>
+    <string name="tech_purple_scheme">Tím công nghệ</string>
+    <string name="black_mamba_scheme">Mamba đen</string>
+    <string name="grey_style_scheme">Phong cách xám</string>
+    <string name="custom_color_scheme">Màu tùy chỉnh</string>
+    <string name="custom_color_scheme_description">Đặt ba màu riêng cho chủ đề ứng dụng</string>
+    <string name="current_colors">Màu hiện tại</string>
+    <string name="primary_color">Màu chính</string>
+    <string name="secondary_color">Màu phụ</string>
+    <string name="tertiary_color">Màu thứ ba</string>
+    <string name="apply_custom_colors">Áp dụng màu tùy chỉnh</string>
+    <string name="select_color">Chọn màu</string>
+    <string name="select_from_preset_colors">Chọn từ màu có sẵn</string>
+    
+    <!-- Validator Progress Bar Style -->
+    <string name="validator_progress_bar_style">Thanh tiến trình xác thực</string>
+    <string name="progress_bar_style_linear">Tuyến tính</string>
+    <string name="progress_bar_style_wave">Sóng</string>
+    
+    <!-- Unified Progress Bar -->
+    <string name="unified_progress_bar_title">Thanh tiến trình thống nhất</string>
+    <string name="unified_progress_bar_description">Hiển thị thanh tiến trình 30 giây duy nhất ở đầu cho tất cả các mục TOTP tiêu chuẩn</string>
+    <string name="smooth_progress_bar_title">Thanh tiến trình mượt</string>
+    <string name="smooth_progress_bar_description">Bật hoạt ảnh mượt mà, hiển thị tiến trình không bị giật</string>
+    <string name="validator_settings_section">Cài đặt xác thực</string>
+    <string name="experimental_features_section">Tính năng thử nghiệm</string>
+    
+    <!-- Rung xác thực -->
+    <string name="validator_vibration">Rung xác thực</string>
+    <string name="validator_vibration_description">Rung khi đếm ngược sắp kết thúc</string>
+    
+    <!-- Support Author -->
+    <string name="support_author">Ủng hộ tác giả</string>
+    <string name="support_author_subtitle">Phần mềm hoàn toàn miễn phí, cảm ơn sự ủng hộ của bạn</string>
+    
+    <!-- Icon Cards -->
+    <string name="icon_cards_title">Biểu tượng trang web</string>
+    <string name="icon_cards_description">Hiển thị biểu tượng trang web trên thẻ mật khẩu</string>
+    
+    <!-- Password Card Display Mode -->
+    <string name="password_card_display_mode_title">Hiển thị nội dung thẻ</string>
+    <string name="display_mode_all">Chi tiết</string>
+    <string name="display_mode_all_desc">Hiển thị tiêu đề, trang web và tên người dùng</string>
+    <string name="display_mode_title_username">Thu gọn</string>
+    <string name="display_mode_title_username_desc">Chỉ hiển thị tiêu đề và tên người dùng</string>
+    <string name="display_mode_title_only">Tối giản</string>
+    <string name="display_mode_title_only_desc">Chỉ hiển thị tiêu đề</string>
+    
+    <!-- Data Management in Settings -->
+    <string name="data_management">Quản lý dữ liệu</string>
+    
+    <!-- WebDAV Backup -->
+    <string name="webdav_backup">Sao lưu WebDAV</string>
+    <string name="webdav_backup_description">Sao lưu lên máy chủ WebDAV</string>
+    <string name="webdav_config">Cấu hình WebDAV</string>
+    <string name="webdav_server_url">URL máy chủ</string>
+    <string name="webdav_test_connection">Kiểm tra kết nối</string>
+    <string name="webdav_reconfigure">Cấu hình lại</string>
+    <string name="webdav_connection_success">Kết nối thành công</string>
+    <string name="webdav_connection_failed">Kết nối thất bại: %s</string>
+    <string name="webdav_fill_all_fields">Vui lòng điền đầy đủ các trường</string>
+    <string name="webdav_backup_list">Danh sách sao lưu</string>
+    <string name="webdav_no_backups">Không tìm thấy bản sao lưu</string>
+    <string name="delete_backup">Xóa bản sao lưu</string>
+    <string name="delete_backup_confirm">Bạn có chắc chắn muốn xóa bản sao lưu:\n%s?</string>
+    <string name="backup_deleted">Đã xóa bản sao lưu</string>
+    <string name="delete_failed">Xóa thất bại: %s</string>
+    <string name="refresh">Làm mới</string>
+    
+    <!-- WebDAV Encryption -->
+    <string name="webdav_enable_encryption">Bật mã hóa</string>
+    <string name="webdav_encryption_description">Mã hóa bản sao lưu bằng AES-256</string>
+    <string name="webdav_encryption_password">Mật khẩu mã hóa</string>
+    <string name="webdav_encryption_password_hint">Nhập mật khẩu mã hóa</string>
+    <string name="webdav_encryption_password_confirm">Xác nhận mật khẩu</string>
+    <string name="webdav_encryption_password_mismatch">Mật khẩu không khớp</string>
+    <string name="webdav_encryption_password_empty">Mật khẩu mã hóa không được để trống</string>
+    <string name="webdav_encryption_password_short">Mật khẩu phải có ít nhất 8 ký tự</string>
+    <string name="webdav_backup_encrypted">Đã mã hóa</string>
+    <string name="webdav_backup_unencrypted">Chưa mã hóa</string>
+    <string name="webdav_enter_decrypt_password">Nhập mật khẩu giải mã</string>
+    <string name="webdav_decrypt_password_hint">Mật khẩu để giải mã bản sao lưu</string>
+    <string name="webdav_decryption_failed">Giải mã thất bại: Mật khẩu sai hoặc tệp bị hỏng</string>
+    
+    <!-- WebDAV Auto Backup -->
+    <string name="webdav_auto_backup">Sao lưu tự động</string>
+    <string name="webdav_auto_backup_description">Sao lưu lần đầu mỗi ngày hoặc mỗi 12 giờ</string>
+    <string name="webdav_auto_backup_enabled">Đã bật sao lưu tự động</string>
+    <string name="webdav_auto_backup_disabled">Đã tắt sao lưu tự động</string>
+    <string name="webdav_last_backup">Lần sao lưu cuối</string>
+    <string name="webdav_last_backup_never">Chưa từng</string>
+    <string name="webdav_last_backup_time">%s trước</string>
+    <string name="webdav_backup_now">Sao lưu ngay</string>
+    <string name="webdav_backup_in_progress">Đang sao lưu…</string>
+    <string name="webdav_backup_success">Sao lưu thành công</string>
+    <string name="webdav_backup_failed">Sao lưu thất bại: %s</string>
+    <string name="webdav_clear_config">Xóa cấu hình</string>
+    <string name="webdav_config_cleared">Đã xóa cấu hình WebDAV</string>
+    <string name="webdav_network_unreachable">Không thể kết nối mạng, vui lòng kiểm tra kết nối mạng</string>
+    <string name="webdav_connection_timeout">Hết thời gian kết nối, vui lòng kiểm tra địa chỉ máy chủ và kết nối mạng</string>
+    <string name="webdav_auth_failed">Xác thực thất bại, vui lòng kiểm tra tên người dùng và mật khẩu</string>
+    <string name="webdav_path_not_found">Không tìm thấy đường dẫn máy chủ, vui lòng kiểm tra địa chỉ máy chủ</string>
+    <string name="webdav_backup_trigger_failed">Không thể kích hoạt sao lưu: %s</string>
+    <string name="webdav_create_backup_failed">Không thể tạo bản sao lưu</string>
+    <string name="webdav_create_new_backup">Tạo bản sao lưu mới</string>
+    <string name="webdav_backup_success_detail">Sao lưu thành công: %s</string>
+    <string name="webdav_backup_passwords">Mật khẩu: %d</string>
+    <string name="webdav_backup_authenticators">Trình xác thực: %d</string>
+    <string name="webdav_backup_documents">Tài liệu: %d</string>
+    <string name="webdav_backup_bank_cards">Thẻ ngân hàng: %d</string>
+    
+    <!-- Selection Mode -->
+    <string name="selected_items">%d mục đã chọn</string>
+    <string name="exit_selection_mode">Thoát chế độ chọn</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="batch_delete">Xóa hàng loạt</string>
+    <string name="batch_delete_passwords_title">Xóa mật khẩu hàng loạt</string>
+    <string name="batch_delete_passwords_message">Bạn có chắc chắn muốn xóa %d mật khẩu?</string>
+    <string name="batch_delete_totp_title">Xóa TOTP hàng loạt</string>
+    <string name="batch_delete_totp_message">Bạn có chắc chắn muốn xóa %d mục TOTP?</string>
+    <string name="batch_delete_documents_title">Xóa tài liệu hàng loạt</string>
+    <string name="batch_delete_documents_message">Bạn có chắc chắn muốn xóa %d tài liệu?</string>
+    <string name="batch_delete_bankcards_title">Xóa thẻ ngân hàng hàng loạt</string>
+    <string name="batch_delete_bankcards_message">Bạn có chắc chắn muốn xóa %d thẻ ngân hàng?</string>
+    <string name="deleted_items">Đã xóa %d mục</string>
+    <string name="deleted">Đã xóa</string>
+    <string name="batch_favorite">Yêu thích hàng loạt</string>
+    <string name="batch_favorited">Đã thêm %d mật khẩu vào yêu thích</string>
+    <string name="batch_unfavorited">Đã xóa %d mật khẩu khỏi yêu thích</string>
+    <string name="group_favorited">Đã thêm toàn bộ nhóm %d mật khẩu vào yêu thích</string>
+    <string name="group_unfavorited">Đã xóa toàn bộ nhóm %d mật khẩu khỏi yêu thích</string>
+    <string name="add_to_favorites">Thêm vào yêu thích</string>
+    <string name="remove_from_favorites">Xóa khỏi yêu thích</string>
+    <string name="enter_master_password_confirm">Vui lòng nhập mật khẩu chính để xác nhận</string>
+    
+    <!-- Autofill -->
+    <string name="autofill">Tự động điền</string>
+    <string name="autofill_subtitle">Tự động điền mật khẩu cho ứng dụng và trang web</string>
+    <string name="autofill_save_password">Lưu mật khẩu</string>
+    <string name="autofill_save_to_monica">Lưu mật khẩu này vào Monica</string>
+    <string name="autofill_title">Tiêu đề</string>
+    <string name="autofill_username">Tên người dùng</string>
+    <string name="autofill_password">Mật khẩu</string>
+    <string name="autofill_website_app">Trang web/Ứng dụng</string>
+    <string name="autofill_notes">Ghi chú</string>
+    <string name="autofill_show_advanced">Hiển thị tùy chọn nâng cao</string>
+    <string name="autofill_hide_advanced">Ẩn tùy chọn nâng cao</string>
+    <string name="autofill_save_button">Lưu mật khẩu</string>
+    <string name="autofill_cancel">Hủy</string>
+    <string name="autofill_never_for_site">Không bao giờ lưu cho trang web này</string>
+    <string name="autofill_saved_via">Đã lưu qua tự động điền</string>
+    
+    <!-- Clear All Data -->
+    <string name="clear_all_data">Xóa tất cả dữ liệu</string>
+    <string name="clear_all_data_subtitle">Xóa tất cả mật khẩu, xác thực, thẻ ngân hàng và tài liệu</string>
+    <string name="clear_all_data_confirm">Xác nhận xóa tất cả dữ liệu?</string>
+    <string name="clear_all_data_warning">Thao tác này sẽ xóa vĩnh viễn tất cả mật khẩu, xác thực, thẻ ngân hàng và tài liệu, và không thể khôi phục được.\n\nKhuyến nghị xuất bản sao lưu trước khi xóa!</string>
+    <string name="clearing_data">Đang xóa dữ liệu…</string>
+    <string name="password_incorrect">Mật khẩu không đúng</string>
+    <string name="data_type_passwords">Mật khẩu</string>
+    <string name="data_type_totp">Xác thực</string>
+    <string name="data_type_ledger">Sổ kế toán</string>
+    <string name="data_type_documents">Tài liệu</string>
+    <string name="data_type_bank_cards">Thẻ ngân hàng</string>
+    
+    <!-- Security Analysis -->
+    <string name="security_analysis">Phân tích bảo mật</string>
+    <string name="security_analysis_description">Kiểm tra bảo mật mật khẩu, vi phạm và trạng thái 2FA</string>
+    <string name="start_security_analysis">Bắt đầu phân tích bảo mật</string>
+    <string name="analysis_may_take_time">Phân tích có thể mất vài phút</string>
+    <string name="security_overview">Tổng quan bảo mật</string>
+    <string name="analyzing_security">Đang phân tích bảo mật…</string>
+    <string name="duplicate_passwords">Mật khẩu trùng lặp</string>
+    <string name="duplicate_urls">URL trùng lặp</string>
+    <string name="compromised_passwords">Mật khẩu bị vi phạm</string>
+    <string name="no_twofa">Không có 2FA</string>
+    <string name="duplicate_short">Trùng lặp</string>
+    <string name="duplicate_url_short">URL trùng</string>
+    <string name="compromised_short">Bị vi phạm</string>
+    <string name="no_2fa_short">Không có 2FA</string>
+    <string name="checking_duplicate_passwords">Đang kiểm tra mật khẩu trùng lặp…</string>
+    <string name="checking_duplicate_urls">Đang kiểm tra URL trùng lặp…</string>
+    <string name="checking_compromised_passwords">Đang kiểm tra vi phạm mật khẩu…</string>
+    <string name="checking_2fa_status">Đang kiểm tra trạng thái 2FA…</string>
+    <string name="analysis_complete">Phân tích hoàn tất!</string>
+    <string name="used_in_accounts">Được sử dụng trong %d tài khoản</string>
+    <string name="count_accounts">%d tài khoản</string>
+    <string name="breached_times">Bị vi phạm %,d lần</string>
+    <string name="supports_twofa">Hỗ trợ 2FA</string>
+    <string name="no_duplicate_passwords">Tuyệt vời! Không tìm thấy mật khẩu trùng lặp</string>
+    <string name="no_duplicate_urls">Tuyệt vời! Không tìm thấy URL trùng lặp</string>
+    <string name="no_compromised_passwords">Xuất sắc! Không tìm thấy mật khẩu bị vi phạm</string>
+    <string name="all_accounts_have_twofa">Tất cả tài khoản quan trọng đều đã bật 2FA</string>
+    <string name="pwned_passwords_attribution">Được hỗ trợ bởi Have I Been Pwned</string>
+    <string name="twofa_directory_attribution">Tham khảo: 2FA Directory</string>
+    
+    <!-- Generator Screen -->
+    <string name="generator_title">Trình tạo</string>
+    <string name="random_symbol_generator">Trình tạo ký hiệu ngẫu nhiên</string>
+    <string name="random_symbol_generator_tab">Ký hiệu ngẫu nhiên</string>
+    <string name="password_generator">Trình tạo cụm mật khẩu</string>
+    <string name="password_generator_tab">Cụm mật khẩu</string>
+    <string name="pin_generator">Trình tạo PIN</string>
+    <string name="pin_generator_tab">PIN</string>
+    <string name="generator_length">Độ dài</string>
+    <string name="generator_include_uppercase">Bao gồm chữ hoa (A-Z)</string>
+    <string name="generator_include_lowercase">Bao gồm chữ thường (a-z)</string>
+    <string name="generator_include_numbers">Bao gồm số (0-9)</string>
+    <string name="generator_include_symbols">Bao gồm ký hiệu (!@#$...)</string>
+    <string name="generator_exclude_similar">Loại trừ ký tự giống nhau (0,O,l,I)</string>
+    <string name="generator_exclude_ambiguous">Loại trừ ký tự mơ hồ</string>
+    <string name="generator_first_letter_uppercase">Chữ cái đầu viết hoa</string>
+    <string name="generator_include_numbers_in_password">Bao gồm số</string>
+    <string name="generator_custom_separator">Ký tự phân cách tùy chỉnh</string>
+    <string name="generator_separator_counts_towards_length">Ký tự phân cách tính vào độ dài</string>
+    <string name="generator_segment_length">Độ dài đoạn</string>
+    <string name="generator_pin_length">Độ dài PIN</string>
+    <string name="generator_generate">Tạo</string>
+    <string name="generator_result">Kết quả</string>
+    <string name="generator_copy">Sao chép</string>
+    <string name="generator_copied">Đã sao chép vào clipboard</string>
+    <string name="generator_invalid_length">Độ dài không hợp lệ</string>
+    <string name="generator_action">Tạo</string>
+    
+    <!-- Ledger / Accounting -->
+    <string name="ledger_title">Sổ kế toán</string>
+    <string name="ledger_balance">Số dư</string>
+    <string name="ledger_income">Thu nhập</string>
+    <string name="ledger_expense">Chi tiêu</string>
+    <string name="ledger_transfer">Chuyển khoản</string>
+    <string name="ledger_add_entry">Thêm mục nhập</string>
+    <string name="ledger_edit_entry">Sửa mục nhập</string>
+    <string name="ledger_entry_type">Loại</string>
+    <string name="ledger_amount">Số tiền</string>
+    <string name="ledger_category">Danh mục</string>
+    <string name="ledger_category_none">Không có danh mục</string>
+    <string name="ledger_no_category_available">Không có danh mục khả dụng cho loại này</string>
+    <string name="ledger_time">Thời gian</string>
+    <string name="ledger_note">Ghi chú</string>
+    <string name="ledger_select_category">Chọn danh mục</string>
+    <string name="ledger_empty">Chưa có mục nhập nào. Nhấn + để thêm</string>
+    <string name="ledger_payment_method">Phương thức thanh toán</string>
+    <string name="ledger_payment_wechat">WeChat</string>
+    <string name="ledger_payment_alipay">Alipay</string>
+    <string name="ledger_payment_unionpay">UnionPay</string>
+    <string name="ledger_delete">Xóa</string>
+    <string name="ledger_delete_confirm_title">Xóa mục nhập</string>
+    <string name="ledger_delete_confirm_message">Bạn có chắc chắn muốn xóa mục nhập này?</string>
+    <string name="ledger_cancel">Hủy</string>
+    <string name="ledger_view_switch">Chuyển đổi chế độ xem</string>
+    <string name="ledger_view_daily">Xem theo ngày</string>
+    <string name="ledger_view_weekly">Xem theo tuần</string>
+    <string name="ledger_view_monthly">Xem theo tháng</string>
+    <string name="ledger_view_yearly">Xem theo năm</string>
+    <string name="ledger_view_all">Tất cả dữ liệu</string>
+
+    <!-- Ledger Entry Detail -->
+    <string name="ledger_entry_detail">Chi tiết mục nhập</string>
+    
+    <!-- Cài đặt tự động điền - Chung -->
+    <string name="autofill_settings_title">Tự động điền</string>
+    <string name="autofill_settings_refresh">Làm mới trạng thái</string>
+    <string name="autofill_settings_back">Quay lại</string>
+    
+    <!-- Cài đặt tự động điền - Cài đặt hệ thống -->
+    <string name="autofill_system_settings_title">Cài đặt hệ thống</string>
+    <string name="autofill_system_set_provider">Đặt nhà cung cấp thông tin xác thực</string>
+    <string name="autofill_system_set_provider_desc">Chọn Monica làm dịch vụ tự động điền trong cài đặt hệ thống</string>
+    <string name="autofill_system_passkey_settings">Cài đặt Passkey và Mật khẩu</string>
+    <string name="autofill_system_passkey_settings_desc">Quản lý passkey, mật khẩu và dịch vụ dữ liệu</string>
+    <string name="autofill_system_chrome_settings">Cài đặt tự động điền Chrome</string>
+    <string name="autofill_system_chrome_settings_desc">Bật hỗ trợ dịch vụ điền của bên thứ ba trong Chrome</string>
+    
+    <!-- Cài đặt tự động điền - Cài đặt khớp -->
+    <string name="autofill_match_settings_title">Cài đặt khớp</string>
+    <string name="autofill_domain_strategy_title">Chiến lược khớp tên miền</string>
+    
+    <!-- Cài đặt tự động điền - Hành vi điền -->
+    <string name="autofill_fill_behavior_title">Hành vi điền</string>
+    <string name="autofill_fill_verify_identity">Xác minh trước khi điền</string>
+    <string name="autofill_fill_verify_identity_desc">Yêu cầu xác minh vân tay hoặc mật khẩu sau khi chọn mật khẩu</string>
+    <string name="autofill_fill_suggestions">Gợi ý điền</string>
+    <string name="autofill_fill_suggestions_desc">Tự động hiển thị gợi ý mật khẩu phù hợp</string>
+    <string name="autofill_fill_manual_selection">Chọn thủ công</string>
+    <string name="autofill_fill_manual_selection_desc">Cho phép chọn thủ công mật khẩu để điền</string>
+    
+    <!-- Cài đặt tự động điền - Hành vi lưu -->
+    <string name="autofill_save_behavior_title">Hành vi lưu</string>
+    <string name="autofill_save_enable">Bật tự động lưu</string>
+    <string name="autofill_save_enable_desc">Tự động nhắc lưu mật khẩu khi điền biểu mẫu</string>
+    <string name="autofill_save_update_duplicate">Tự động cập nhật mật khẩu trùng lặp</string>
+    <string name="autofill_save_update_duplicate_desc">Tự động cập nhật mật khẩu khi phát hiện tên người dùng trùng lặp</string>
+    <string name="autofill_save_show_notification">Hiển thị thông báo lưu</string>
+    <string name="autofill_save_show_notification_desc">Hiển thị thông báo sau khi lưu mật khẩu thành công</string>
+    <string name="autofill_save_smart_title">Tạo tiêu đề thông minh</string>
+    <string name="autofill_save_smart_title_desc">Tự động tạo tiêu đề mật khẩu từ tên ứng dụng hoặc tên miền</string>
+    <string name="autofill_save_app_info">Tự động lưu thông tin ứng dụng</string>
+    <string name="autofill_save_app_info_desc">Tự động ghi lại tên gói ứng dụng vào mục mật khẩu</string>
+    <string name="autofill_save_website_info">Tự động lưu thông tin trang web</string>
+    <string name="autofill_save_website_info_desc">Tự động ghi lại tên miền trang web vào mục mật khẩu</string>
+    
+    <!-- Cài đặt tự động điền - Danh sách đen -->
+    <string name="autofill_blacklist_title">Danh sách đen</string>
+    <string name="autofill_blacklist_enable">Bật danh sách đen</string>
+    <string name="autofill_blacklist_enable_desc">Ngăn các ứng dụng cụ thể sử dụng tự động điền</string>
+    <string name="autofill_blacklist_manage">Quản lý ứng dụng danh sách đen</string>
+    <string name="autofill_blacklist_manage_desc">Đã thêm %d ứng dụng</string>
+    <string name="autofill_blacklist_dialog_title">Quản lý danh sách đen</string>
+    <string name="autofill_blacklist_dialog_desc">Các ứng dụng trong danh sách đen sẽ không thể sử dụng tự động điền</string>
+    <string name="autofill_blacklist_dialog_done">Xong</string>
+    
+    <!-- Cài đặt tự động điền - Thẻ thông tin -->
+    <string name="autofill_info_card_text">Tự động điền yêu cầu Android 8.0 trở lên. Sau khi bật, Monica sẽ tự động điền mật khẩu đã lưu khi bạn truy cập ứng dụng và trang web.</string>
+    
+    <!-- Trạng thái tự động điền -->
+    <string name="autofill_status_enabled">Tự động điền đã bật</string>
+    <string name="autofill_status_disabled">Tự động điền đã tắt</string>
+    
+    <!-- OTP Notification Settings -->
+    <string name="autofill_otp_settings_title">Trình xác thực</string>
+    <string name="autofill_show_otp_notification">Hiển thị mã xác thực trên thanh thông báo</string>
+    <string name="autofill_show_otp_notification_desc">Hiển thị mã xác thực 2 bước trên thanh thông báo khi tự động điền</string>
+    <string name="autofill_auto_copy_otp">Tự động sao chép mã xác thực</string>
+    <string name="autofill_auto_copy_otp_desc">Tự động sao chép mã xác thực 2 bước vào bảng nhớ tạm khi tự động điền</string>
+    <string name="autofill_otp_notification_duration">Thời gian hiển thị thông báo</string>
+    <string name="autofill_otp_notification_duration_desc">Thời gian thông báo được giữ lại (giây)</string>
+    <string name="autofill_otp_copy_action">Sao chép %s</string>
+    <string name="autofill_otp_notification_channel">Mã xác thực tự động điền</string>
+    
+    <string name="autofill_respect_disabled_flag_title">Tôn trọng cờ tắt tự động điền</string>
+    <string name="autofill_respect_disabled_flag_desc">Không điền vào các trường được đánh dấu tắt tự động điền</string>
+    
+    <string name="autofill_status_enabled_desc">Monica được đặt làm dịch vụ tự động điền mặc định</string>
+    <string name="autofill_status_disabled_desc">Vui lòng bật Monica trong cài đặt hệ thống</string>
+    <string name="autofill_status_all_functional">Tất cả tính năng hoạt động bình thường</string>
+    <string name="autofill_status_enable_prompt">Vui lòng bật Monica làm dịch vụ tự động điền trong cài đặt hệ thống</string>
+    <string name="autofill_status_go_to_settings">Đi tới cài đặt hệ thống</string>
+    <string name="autofill_status_compatibility_issues">Phát hiện vấn đề tương thích:</string>
+    <string name="autofill_status_more_issues">Còn %d vấn đề khác...</string>
+    <string name="autofill_status_troubleshoot">Khắc phục sự cố</string>
+    <string name="autofill_status_summary_operational">Dịch vụ tự động điền hoạt động bình thường</string>
+    <string name="autofill_status_summary_not_declared">Dịch vụ không được khai báo đúng cách</string>
+    <string name="autofill_status_summary_system_disabled">Dịch vụ tự động điền hệ thống chưa được bật</string>
+    <string name="autofill_status_summary_app_disabled">Tự động điền chưa được bật trong ứng dụng</string>
+    <string name="autofill_status_summary_no_permissions">Thiếu quyền cần thiết</string>
+    <string name="autofill_status_summary_compatibility_issues">Tồn tại vấn đề tương thích</string>
+    <string name="autofill_status_summary_abnormal">Trạng thái dịch vụ bất thường</string>
+    
+    <!-- Chiến lược khớp tên miền -->
+    <string name="autofill_domain_strategy_base_domain">Tên miền cơ sở</string>
+    <string name="autofill_domain_strategy_base_domain_desc">Khớp tên miền cơ sở và tất cả tên miền phụ (Khuyến nghị)</string>
+    <string name="autofill_domain_strategy_domain">Tên miền</string>
+    <string name="autofill_domain_strategy_domain_desc">Chỉ khớp tên miền được chỉ định và tên miền phụ</string>
+    <string name="autofill_domain_strategy_starts_with">Bắt đầu bằng</string>
+    <string name="autofill_domain_strategy_starts_with_desc">Khớp nếu URL bắt đầu bằng chuỗi được chỉ định</string>
+    <string name="autofill_domain_strategy_exact_match">Khớp chính xác</string>
+    <string name="autofill_domain_strategy_exact_match_desc">URL phải khớp chính xác</string>
+    <string name="autofill_domain_strategy_regex">Biểu thức chính quy</string>
+    <string name="autofill_domain_strategy_regex_desc">Sử dụng biểu thức chính quy để khớp nâng cao</string>
+    <string name="autofill_domain_strategy_never">Không bao giờ</string>
+    <string name="autofill_domain_strategy_never_desc">Vô hiệu hóa tự động điền</string>
+    <string name="autofill_domain_strategy_dialog_title">Chọn chiến lược khớp tên miền</string>
+    <string name="autofill_domain_strategy_dialog_close">Đóng</string>
+    
+    <!-- Hộp thoại khắc phục sự cố -->
+    <string name="autofill_troubleshoot_title">Chẩn đoán tự động điền</string>
+    <string name="autofill_troubleshoot_device_info">Thông tin thiết bị</string>
+    <string name="autofill_troubleshoot_manufacturer">Nhà sản xuất</string>
+    <string name="autofill_troubleshoot_model">Mẫu</string>
+    <string name="autofill_troubleshoot_android_version">Phiên bản Android</string>
+    <string name="autofill_troubleshoot_rom_type">Loại ROM</string>
+    <string name="autofill_troubleshoot_inline_support">Hỗ trợ gợi ý nội tuyến</string>
+    <string name="autofill_troubleshoot_yes">Có</string>
+    <string name="autofill_troubleshoot_no">Không</string>
+    <string name="autofill_troubleshoot_service_status">Trạng thái dịch vụ</string>
+    <string name="autofill_troubleshoot_service_declared">Dịch vụ đã khai báo</string>
+    <string name="autofill_troubleshoot_system_enabled">Hệ thống đã bật</string>
+    <string name="autofill_troubleshoot_app_enabled">Ứng dụng đã bật</string>
+    <string name="autofill_troubleshoot_permissions_complete">Quyền đầy đủ</string>
+    <string name="autofill_troubleshoot_status_normal">Bình thường</string>
+    <string name="autofill_troubleshoot_status_abnormal">Bất thường</string>
+    <string name="autofill_troubleshoot_statistics">Thống kê</string>
+    <string name="autofill_troubleshoot_stat_total_requests">Tổng số yêu cầu</string>
+    <string name="autofill_troubleshoot_stat_successful_requests">Yêu cầu thành công</string>
+    <string name="autofill_troubleshoot_stat_failed_requests">Yêu cầu thất bại</string>
+    <string name="autofill_troubleshoot_stat_success_rate">Tỷ lệ thành công</string>
+    <string name="autofill_troubleshoot_stat_avg_response_time">Thời gian phản hồi trung bình</string>
+    <string name="autofill_troubleshoot_stat_min_response_time">Thời gian phản hồi tối thiểu</string>
+    <string name="autofill_troubleshoot_stat_max_response_time">Thời gian phản hồi tối đa</string>
+    <string name="autofill_troubleshoot_stat_total_logs">Tổng số nhật ký</string>
+    <string name="autofill_troubleshoot_stat_error_count">Số lỗi</string>
+    <string name="autofill_troubleshoot_stat_warning_count">Số cảnh báo</string>
+    <string name="autofill_troubleshoot_recent_requests">Yêu cầu gần đây</string>
+    <string name="autofill_troubleshoot_request_details">Trường: %1$d, Khớp: %2$d, Bộ dữ liệu: %3$d</string>
+    <string name="autofill_troubleshoot_request_error">Lỗi: %s</string>
+    <string name="autofill_troubleshoot_detected_issues">Vấn đề đã phát hiện</string>
+    <string name="autofill_troubleshoot_issue_affected">Ảnh hưởng %d yêu cầu</string>
+    <string name="autofill_troubleshoot_recommendations">Khuyến nghị</string>
+    <string name="autofill_troubleshoot_export_logs">Xuất nhật ký</string>
+    <string name="autofill_troubleshoot_close">Đóng</string>
+    
+    <!-- Tên ứng dụng danh sách đen -->
+    <string name="autofill_blacklist_app_wechat">WeChat</string>
+    <string name="autofill_blacklist_app_alipay">Alipay</string>
+    <string name="autofill_blacklist_app_unionpay">UnionPay</string>
+    <string name="autofill_blacklist_app_qq">QQ</string>
+    <string name="autofill_blacklist_app_taobao">Taobao</string>
+    <string name="autofill_blacklist_app_jd">JD</string>
+    <string name="autofill_blacklist_app_wework">WeChat Work</string>
+    <string name="autofill_blacklist_app_weibo">Weibo</string>
+    
+  <!-- Cài đặt nhà phát triển -->
+    <string name="developer_settings">Cài đặt nhà phát triển</string>
+    <string name="developer_settings_subtitle">Xem nhật ký và công cụ gỡ lỗi</string>
+    <string name="developer_settings_back">Quay lại</string>
+    <string name="developer_log_debugging">Gỡ lỗi nhật ký</string>
+    <string name="developer_view_logs">Xem nhật ký</string>
+    <string name="developer_view_logs_desc">Xem nhật ký đầu ra Logcat của ứng dụng</string>
+    <string name="developer_clear_log_buffer">Xóa bộ đệm nhật ký</string>
+    <string name="developer_clear_log_buffer_desc">Xóa bộ đệm nhật ký của thiết bị</string>
+    <string name="developer_share_logs">Chia sẻ nhật ký</string>
+    <string name="developer_share_logs_desc">Xuất và chia sẻ nhật ký gần đây</string>
+    <string name="developer_functions">Chức năng nhà phát triển</string>
+    <string name="developer_disable_password_verification">Tắt xác minh mật khẩu</string>
+    <string name="developer_disable_password_verification_desc">Bỏ qua xác minh mật khẩu khi khởi động ứng dụng (chỉ dành cho kiểm thử phát triển)</string>
+    <string name="developer_warning">⚠️ Chức năng nhà phát triển chỉ dành cho kiểm thử, không bật trong môi trường sản xuất</string>
+    <string name="developer_log_buffer_cleared">Đã xóa bộ đệm nhật ký</string>
+    <string name="developer_clear_failed">Xóa thất bại: %s</string>
+    <string name="developer_share_failed">Chia sẻ thất bại: %s</string>
+    <string name="developer_share_subject">Nhật ký ứng dụng Monica</string>
+    <string name="developer_share_title">Chia sẻ nhật ký</string>
+    <string name="developer_system_logs">Nhật ký hệ thống</string>
+    <string name="developer_loading_logs">Đang tải nhật ký...</string>
+    <string name="developer_no_logs">Không có nhật ký\n\nMẹo: Đảm bảo ứng dụng đã chạy một số thao tác</string>
+    <string name="developer_load_failed">Tải thất bại: %s\n\nCó thể cần quyền gỡ lỗi để đọc nhật ký</string>
+    <string name="developer_refresh">Làm mới</string>
+    <string name="developer_close">Đóng</string>
+
+    <!-- Password Strength -->
+    <string name="password_strength">Độ mạnh mật khẩu:</string>
+    <string name="strength_very_weak">Rất yếu</string>
+    <string name="strength_weak">Yếu</string>
+    <string name="strength_fair">Trung bình</string>
+    <string name="strength_strong">Mạnh</string>
+    <string name="strength_very_strong">Rất mạnh</string>
+    <string name="improvement_suggestions">Đề xuất cải thiện:</string>
+    
+    <!-- Password Strength Suggestions -->
+    <string name="suggestion_enter_password">Vui lòng nhập mật khẩu</string>
+    <string name="suggestion_too_short">Mật khẩu quá ngắn, nên có ít nhất 6 ký tự</string>
+    <string name="suggestion_use_8_chars">Nên sử dụng 8 ký tự trở lên</string>
+    <string name="suggestion_use_12_chars">Nên sử dụng 12 ký tự trở lên để tăng cường bảo mật</string>
+    <string name="suggestion_add_lowercase">Thêm chữ thường (a-z)</string>
+    <string name="suggestion_add_uppercase">Thêm chữ hoa (A-Z)</string>
+    <string name="suggestion_add_digits">Thêm số (0-9)</string>
+    <string name="suggestion_add_special">Thêm ký tự đặc biệt (!@#$%^&amp;*)</string>
+    <string name="suggestion_avoid_repeating">Tránh ký tự lặp lại (ví dụ: aaa, 111)</string>
+    <string name="suggestion_avoid_sequential">Tránh ký tự liên tiếp (ví dụ: abc, 123)</string>
+    <string name="suggestion_common_password">⚠️ Đây là mật khẩu phổ biến, dễ bị bẻ khóa!</string>
+    <string name="suggestion_increase_randomness">Mật khẩu có tính dự đoán cao, nên tăng tính ngẫu nhiên</string>
+
+    <!-- Password Detail Dialog -->
+    <string name="basic_info">📝 Thông tin cơ bản</string>
+    <string name="website">Trang web</string>
+    <string name="email">Email</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="personal_info">Thông tin cá nhân</string>
+    <string name="address_info">Thông tin địa chỉ</string>
+    <string name="address_line">Địa chỉ chi tiết</string>
+    <string name="state">Tỉnh/Thành</string>
+    <string name="zip_code">Mã bưu điện</string>
+    <string name="payment_info">Thông tin thanh toán</string>
+    <string name="credit_card_number">Số thẻ tín dụng</string>
+    <string name="card_holder">Chủ thẻ</string>
+    <string name="credit_card_encrypted">Thông tin thẻ tín dụng đã được mã hóa</string>
+    <string name="expand">Mở rộng</string>
+    <string name="copied">Đã sao chép %s</string>
+
+    <!-- Generator Screen -->
+    <string name="generator_symbol">Ký hiệu</string>
+    <string name="generator_word">Từ</string>
+    <string name="generator_passphrase">Cụm từ</string>
+    <string name="generator_pin">PIN</string>
+    <string name="generated_password">Mật khẩu đã tạo</string>
+    <string name="symbol_password_generator">Trình tạo mật khẩu ký hiệu</string>
+    <string name="history">Lịch sử</string>
+    <string name="no_history">Chưa có lịch sử</string>
+    <string name="clear_history">Xóa lịch sử</string>
+    <string name="copied_to_clipboard">Đã sao chép vào clipboard</string>
+    <string name="copy_password_desc">Sao chép mật khẩu</string>
+    <string name="saved_from_generator_history">Đã lưu từ lịch sử trình tạo mật khẩu\nThời gian tạo: %s</string>
+    <string name="word_count">Số từ: %d</string>
+    <string name="delimiter">Ký tự phân cách</string>
+    <string name="delimiter_placeholder">Ví dụ: - hoặc _ hoặc . hoặc khoảng trắng</string>
+    <string name="capitalize_first_letter">Viết hoa chữ cái đầu</string>
+    <string name="add_number_at_end">Thêm số ở cuối</string>
+    <string name="custom_word_optional">Từ tùy chỉnh (Tùy chọn)</string>
+    <string name="custom_word_placeholder">Từ tùy chỉnh để bao gồm trong cụm từ</string>
+    <string name="generator_history_description">Mật khẩu được tạo và sử dụng qua tự động điền sẽ xuất hiện ở đây</string>
+    <string name="character_types">Loại ký tự</string>
+    <string name="include_uppercase">Bao gồm chữ hoa (A-Z)</string>
+    <string name="include_lowercase">Bao gồm chữ thường (a-z)</string>
+    <string name="include_numbers">Bao gồm số (0-9)</string>
+    <string name="include_symbols">Bao gồm ký hiệu (!@#$%)</string>
+    <string name="passphrase_generator">Trình tạo cụm mật khẩu</string>
+    <string name="pin_length">Độ dài PIN: %d</string>
+    <string name="length_label">Độ dài: %d</string>
+    <string name="length_chars">Độ dài: %d ký tự</string>
+    
+    <!-- Generator - Minimum Characters -->
+    <string name="minimum_characters_requirement">Yêu cầu ký tự tối thiểu</string>
+    <string name="min_uppercase">Tối thiểu chữ hoa: %d</string>
+    <string name="min_lowercase">Tối thiểu chữ thường: %d</string>
+    <string name="min_numbers">Tối thiểu số: %d</string>
+    <string name="min_symbols">Tối thiểu ký hiệu: %d</string>
+    
+    <!-- Generator - Actions -->
+    <string name="regenerate">Tạo lại</string>
+    <string name="save_to_vault">Lưu vào kho</string>
+    <string name="already_in_vault">Đã có trong kho</string>
+    <string name="saved_to_vault">Đã lưu vào kho</string>
+    <string name="username_label">Tên người dùng: %s</string>
+    
+    <!-- Generator History Filter -->
+    <string name="filter_history">Lọc lịch sử</string>
+    <string name="history_type_symbol">Mật khẩu ký hiệu</string>
+    <string name="history_type_password">Mật khẩu từ</string>
+    <string name="history_type_passphrase">Cụm mật khẩu</string>
+    <string name="history_type_pin">Mã PIN</string>
+    <string name="history_type_autofill">Mật khẩu tự động điền</string>
+    <string name="select_history_types">Chọn loại lịch sử</string>
+    <string name="history_filter_description">Chọn loại mật khẩu hiển thị trong lịch sử</string>
+    
+    <!-- Clear All Data -->
+    <string name="select_data_types_to_clear">Chọn loại dữ liệu cần xóa:</string>
+    <string name="clear_passwords">Mật khẩu</string>
+    <string name="clear_authenticators">Xác thực</string>
+    <string name="clear_documents">Giấy tờ</string>
+    <string name="clear_bank_cards">Thẻ ngân hàng</string>
+    <string name="clear_generator_history">Lịch sử tạo</string>
+    <string name="enter_master_password_to_confirm">Nhập mật khẩu chính để xác nhận</string>
+
+    <!-- Permission Management -->
+    <string name="permission_management_title">Quản lý quyền</string>
+    <string name="permission_management_subtitle">Quản lý quyền ứng dụng</string>
+    <string name="permission_management_description">Xem và quản lý quyền được Monica sử dụng</string>
+    <string name="help">Trợ giúp</string>
+
+    <!-- Permission Categories -->
+    <string name="permission_category_security">Quyền bảo mật</string>
+    <string name="permission_category_storage">Quyền lưu trữ</string>
+    <string name="permission_category_network">Quyền mạng</string>
+    <string name="permission_category_device">Quyền thiết bị</string>
+    <string name="permission_category_location">Quyền vị trí</string>
+
+    <!-- Permission Importance -->
+    <string name="permission_importance_required">Bắt buộc</string>
+    <string name="permission_importance_recommended">Khuyến nghị</string>
+    <string name="permission_importance_optional">Tùy chọn</string>
+
+    <!-- Permission Status -->
+    <string name="permission_status_granted">Đã cấp</string>
+    <string name="permission_status_denied">Chưa cấp</string>
+    <string name="permission_status_unavailable">Không khả dụng</string>
+    <string name="permission_status_unknown">Không rõ</string>
+
+    <!-- Permission Names -->
+    <string name="permission_biometric_name">Xác thực sinh trắc học</string>
+    <string name="permission_camera_name">Máy ảnh</string>
+    <string name="permission_storage_name">Truy cập bộ nhớ</string>
+    <string name="permission_internet_name">Truy cập Internet</string>
+    <string name="permission_network_state_name">Trạng thái mạng</string>
+    <string name="permission_vibrate_name">Rung</string>
+    <string name="permission_phone_state_name">Trạng thái điện thoại</string>
+    <string name="permission_location_name">Vị trí</string>
+    <string name="permission_notification_name">Thông báo</string>
+    <string name="permission_autofill_name">Dịch vụ tự động điền</string>
+
+    <!-- Permission Descriptions -->
+    <string name="permission_biometric_description">Dùng cho: Mở khóa bằng vân tay/khuôn mặt</string>
+    <string name="permission_camera_description">Dùng cho: Quét mã QR cho xác thực TOTP</string>
+    <string name="permission_storage_description">Dùng cho: Lưu dữ liệu xuất và hình ảnh</string>
+    <string name="permission_internet_description">Dùng cho: Sao lưu và đồng bộ WebDAV</string>
+    <string name="permission_network_state_description">Dùng cho: Kiểm tra kết nối mạng</string>
+    <string name="permission_vibrate_description">Dùng cho: Phản hồi xúc giác cho xác thực</string>
+    <string name="permission_phone_state_description">Dùng cho: Nhận dạng thiết bị</string>
+    <string name="permission_location_description">Dùng cho: Tính năng dựa trên vị trí (tùy chọn)</string>
+    <string name="permission_notification_description">Dùng cho: Hiển thị mã TOTP trên thanh thông báo</string>
+    <string name="permission_autofill_description">Dùng cho: Tự động điền mật khẩu trong ứng dụng và trình duyệt</string>
+
+    <!-- Permission Stats -->
+    <string name="permission_stats_title">Tóm tắt quyền</string>
+    <string name="permission_stats_required">Quyền bắt buộc: %1$d / %2$d đã cấp</string>
+    <string name="permission_stats_total">Tổng quyền: %1$d / %2$d đã cấp</string>
+
+    <!-- Permission Actions -->
+    <string name="permission_revoke_hint">Để thu hồi quyền này, hãy vào Cài đặt > Ứng dụng > Monica > Quyền</string>
+    <string name="permission_grant_hint">Nhấn để mở cài đặt hệ thống và cấp quyền này</string>
+    <string name="cannot_open_settings">Không thể mở cài đặt hệ thống</string>
+
+    <!-- Permission Help Dialog -->
+    <string name="permission_help_title">Về quyền</string>
+    <string name="permission_help_content">Màn hình này hiển thị tất cả quyền được Monica sử dụng. Nhấn vào quyền để quản lý trong cài đặt hệ thống.\n\n• Bắt buộc: Cần thiết cho chức năng cốt lõi\n• Khuyến nghị: Nâng cao trải nghiệm người dùng\n• Tùy chọn: Cho các tính năng bổ sung</string>
+
+    <!-- Permission Info Card -->
+    <string name="permission_info_title">Quản lý quyền</string>
+    <string name="permission_info_message">Tại đây bạn có thể xem tất cả quyền được Monica sử dụng và trạng thái hiện tại của chúng. Nhấn vào bất kỳ quyền nào để quản lý trong cài đặt hệ thống.</string>
+
+</resources>
