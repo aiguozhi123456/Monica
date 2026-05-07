@@ -53,6 +53,9 @@ export interface PasswordEntry {
     website: string;
     categoryId?: number;
     category?: string;
+    keepassDatabaseId?: number;
+    keepassGroupPath?: string;
+    bitwardenVaultId?: string;
 }
 
 export interface NoteData {
