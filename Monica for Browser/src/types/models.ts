@@ -55,7 +55,11 @@ export interface PasswordEntry {
     category?: string;
     keepassDatabaseId?: number;
     keepassGroupPath?: string;
-    bitwardenVaultId?: string;
+    bitwardenVaultId?: number;
+    bitwardenFolderId?: string;
+    bitwardenCipherId?: string;
+    isArchived?: boolean;
+    archivedAt?: string;
 }
 
 export interface NoteData {
