@@ -21,7 +21,7 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-i18next": "^16.5.0",
-    "react-router-dom": "^7.11.0",
+    "react-router-dom": "^7.17.0",
     "styled-components": "^6.1.19",
     "webdav": "^5.8.0"
   },
